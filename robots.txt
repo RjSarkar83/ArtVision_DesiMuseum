@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# After going live, replace YOUR-USERNAME and REPO, then rename
+# sitemap.xml.template -> sitemap.xml
+Sitemap: https://YOUR-USERNAME.github.io/REPO/sitemap.xml

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'unsafe-inline'; img-src 'self' data: https:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://www.google-analytics.com; base-uri 'self'; form-action 'self' https://wa.me; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<title>ArtVision DesiMuseum — Indian Folk Art Canvas, CNC & Laser Masterpieces</title>
+<link rel="icon" type="image/png" href="logo_icon.png">
+<meta name="description" content="Shop museum-grade Indian folk art wall prints, canvas prints and framed canvas artworks inspired by the folk traditions of Rajasthan, Bengal, Kashmir, Warli, Kerala and more. Custom-made, made in India and gift-ready.">
+<meta name="keywords" content="Indian folk art wall prints, canvas prints, framed canvas artwork, tribal art canvas, Gond Warli Madhubani canvas, home decor Indian art, made in India gifts, custom wall art Indore">
+<meta property="og:title" content="ArtVision DesiMuseum — India's stories, in your hands."><meta property="og:description" content="Museum-grade Indian folk art wall prints, canvas prints and framed canvases — the story of a state on your wall."><meta property="og:type" content="website"><meta property="og:image" content="https://rjsarkar83.github.io/ArtVision_DesiMuseum/assets/india_map_full.jpg"><meta property="og:url" content="https://rjsarkar83.github.io/ArtVision_DesiMuseum/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://rjsarkar83.github.io/ArtVision_DesiMuseum/assets/india_map_full.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"ArtVision DesiMuseum","description":"Collectible playing-card decks and canvas art celebrating Indian craft, culture and places.","priceRange":"₹₹","areaServed":"IN","email":"artvisioncnc@gmail.com","sameAs":["https://www.instagram.com/artvision_studion/","https://wa.me/919009001551","https://in.pinterest.com/ranjansarkar83/"],"offers":{"@type":"AggregateOffer","priceCurrency":"INR","lowPrice":"2199","highPrice":"11999"}}</script>
+<style>
+/* ============ 1. Tokens & base ============ */
+:root{
+  --ivory:#f4eee1;
+  --ivory-card:#faf6ea;
+  --ink:#181410;
+  --red:#c9372a;
+  --red-deep:#a5271c;
+  --ochre:#b9862f;
+  --teal:#1e5a55;
+  --muted:#6e675b;
+  --line:#ded3bf;
+  --display:"Arial Black","Arial Bold","Helvetica Neue",Arial,sans-serif;
+  --serif:Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;letter-spacing:-.01em}
+img{display:block}
+button{font:inherit;cursor:pointer;border:0;border-radius:0;background:none;color:inherit}
+a{color:inherit}
+
+/* ============ 2. Announcement + nav ============ */
+.top{background:var(--ink);color:var(--ivory);padding:10px 5vw;text-align:center;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 5vw;border-bottom:2px solid var(--ink);background:var(--ivory);position:sticky;top:0;z-index:20}
+.brand{font-family:var(--display);font-size:26px;text-transform:uppercase;letter-spacing:-.06em;line-height:1}
+.brand span{color:var(--ink)}
+.navlinks{display:flex;gap:30px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.16em}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{color:var(--ink)}
+.actions{display:flex;gap:14px;align-items:center}
+.icon{font-size:20px;line-height:1;padding:4px}
+.icon:hover{color:var(--ink)}
+.cartBtn{background:var(--red);color:var(--ivory);padding:13px 18px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;transition:background .15s}
+.cartBtn:hover{background:var(--red-deep)}
+
+/* ============ 3. Hero ============ */
+.hero{max-width:1100px;margin:auto;padding:clamp(48px,7vw,96px) 5vw clamp(30px,4vw,56px);display:grid;grid-template-columns:1fr}
+.eyebrow{color:var(--ink);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.hero h1{font-family:var(--display);font-weight:900;font-size:clamp(52px,7.4vw,116px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin:20px 0 24px}
+.hero h1 em{font-style:normal;color:var(--ink)}
+.hero p{font-size:16px;color:var(--muted);max-width:520px;margin:0}
+.cta{display:inline-flex;align-items:center;gap:10px;margin-top:26px;background:var(--ink);color:var(--ivory);padding:16px 26px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;text-decoration:none;transition:background .15s}
+.cta2{display:inline-block;margin-left:12px;background:transparent;color:var(--ink);border:2px solid var(--ink);padding:14px 22px;font:800 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .15s,color .15s}
+.cta2:hover{background:var(--ink);color:var(--ivory)}
+@media(max-width:560px){.cta2{margin-left:0;margin-top:10px}}
+.cta:hover{background:var(--red)}
+/* premium soft-round theme */
+.cta,.cta2,.cartBtn,.icon,.chip,.moreBtn,.shMap,#filter,.search,.add,.dlbtn,.close,.dlx{border-radius:6px}
+.card,.gt,.ts,.dlbox{border-radius:10px;overflow:hidden}
+.card .pic{position:relative}
+.card .pic::after{content:'⤓ preview + download';position:absolute;inset:auto 0 0 0;background:rgba(24,20,16,.82);color:var(--ivory);font:700 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:8px 0;opacity:0;transition:opacity .2s}
+.card:hover .pic::after{opacity:1}
+.drawer{border-radius:12px 0 0 12px}
+.card img,.gtimg,.ts img,.dlbox img{border-radius:8px}
+
+/* Framed Bharat artwork — red offset shadow, kept deliberately modest in size */
+.hero-art{position:relative;margin:0;width:100%;background:none;border:none;box-shadow:none;touch-action:manipulation;cursor:crosshair}
+.hero-art .layer.base{display:block;position:relative;width:100%;height:auto;filter:grayscale(1) contrast(1.05) brightness(1.06);transition:transform .8s ease}
+.hero-art:hover .layer.base,.hero-art.is-live .layer.base{transform:scale(1.05)}
+.hero-art .layer.colour{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-art .layer.colour{opacity:0;transition:opacity .35s ease;
+  -webkit-mask-image:radial-gradient(circle var(--r,150px) at var(--mx,50%) var(--my,50%),#000 58%,transparent 100%);
+  mask-image:radial-gradient(circle var(--r,150px) at var(--mx,50%) var(--my,50%),#000 58%,transparent 100%)}
+.hero-art.is-live .layer.colour{opacity:1}
+@supports not ((mask-image:radial-gradient(#000,transparent)) or (-webkit-mask-image:radial-gradient(#000,transparent))){
+  .hero-art .layer.colour{-webkit-mask-image:none;mask-image:none;clip-path:circle(0px at var(--mx,50%) var(--my,50%));transition:clip-path .12s ease-out,opacity .35s ease}
+  .hero-art.is-live .layer.colour{clip-path:circle(var(--r,150px) at var(--mx,50%) var(--my,50%))}
+}
+
+.artText{position:absolute;inset:auto 0 0 0;z-index:2;pointer-events:none;padding:44px 22px 18px;background:linear-gradient(transparent,rgba(244,238,225,.95));font-family:var(--display);text-transform:uppercase;letter-spacing:-.03em;font-size:clamp(18px,2vw,26px);line-height:1.05}
+
+/* ============ 4. Stats + manifesto + strip ============ */
+
+/* ============ Premium layer: shine, reveal, progress ============ */
+.shine{background:linear-gradient(100deg,#a5271c 0%,#c9372a 22%,#e8705f 38%,#c9372a 54%,#a5271c 72%,#c9372a 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shineMove 5s linear infinite}
+@keyframes shineMove{from{background-position:125% 0}to{background-position:-125% 0}}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){.shine{color:var(--red);-webkit-text-fill-color:currentColor}}
+.stripTrack{display:flex;width:max-content;white-space:nowrap;animation:marquee 32s linear infinite}
+.strip:hover .stripTrack{animation-play-state:paused}
+.stripTrack span{margin:0 22px}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.langPick{display:flex;align-items:center;gap:5px;border:1px solid var(--line);padding:7px 8px;margin-right:6px}
+.langPick select{border:0;background:transparent;font:700 10px var(--sans);letter-spacing:.06em;color:var(--ink);cursor:pointer;max-width:112px}
+.langPick select:focus{outline:2px solid var(--red);outline-offset:1px}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--red);z-index:60;transition:width .1s linear}
+#toTop{position:fixed;right:20px;bottom:20px;z-index:55;background:var(--ink);color:var(--ivory);border:0;width:46px;height:46px;font:800 17px var(--sans);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{background:var(--red)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}
+.reveal.in{opacity:1;transform:none}
+.card .pic{overflow:hidden}
+.card .pic img{transition:transform .55s ease}
+.card:hover .pic img{transform:scale(1.06);filter:grayscale(1)}
+.moreBtn{display:block;width:100%;margin:20px 0 0;background:var(--ink);color:var(--ivory);border:0;padding:17px;font:800 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;cursor:pointer}
+.moreBtn:hover{background:var(--red)}
+.trustLine{font:700 10.5px var(--sans);color:var(--ink);letter-spacing:.06em;margin:12px 0 0}
+::selection{background:var(--red);color:var(--ivory)}
+@media(prefers-reduced-motion:reduce){.shine{animation:none}.reveal{opacity:1;transform:none}}
+
+/* ============ Canvas-type samples — black wall ============ */
+.typeStrip{background:#000;color:#f4eee1;padding:42px 5vw 36px}
+.typeStrip h3{font-family:var(--display);font-size:clamp(19px,2.4vw,28px);margin:0 0 5px;letter-spacing:.02em}
+.tsGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.ts{display:block;text-decoration:none;color:#f4eee1}
+.ts img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border:1px solid #3a352c;transition:opacity .45s}
+@keyframes tsPop{from{transform:scale(.88);opacity:.25}to{transform:scale(1);opacity:1}}
+.ts img.pop{animation:tsPop .6s cubic-bezier(.2,.8,.3,1)}
+.ts span{display:block;margin-top:7px;font:700 9px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#d8d0bd;text-align:center}
+.ts .tsNow{display:block;margin-top:3px;font:500 8.5px var(--sans);color:#8d8471;text-align:center;letter-spacing:.04em}
+@media(max-width:980px){.tsGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.tsGrid{grid-template-columns:repeat(2,1fr)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);background:var(--ivory)}
+.stats div{padding:44px 10px 38px;text-align:center;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats strong{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(34px,3.8vw,60px);line-height:1;color:var(--ink);text-align:center}
+  .stats span{display:block;margin-top:9px;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.manifesto{text-align:center;padding:56px 24px 60px}
+.manifesto p{font-family:var(--serif);font-size:clamp(21px,2.6vw,27px);margin:0 0 10px}
+.manifesto small{font-size:15px;color:var(--muted)}
+.strip{background:var(--ink);color:var(--ivory);padding:15px 0;overflow:hidden;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+
+/* ============ 5. Shop ============ */
+.shop{max-width:1400px;margin:auto;padding:clamp(52px,7vw,92px) 5vw clamp(40px,5vw,64px)}
+.sectionHead{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:28px}
+.sectionHead h2{font-family:var(--display);font-weight:900;font-size:clamp(40px,6vw,88px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin:10px 0 0}
+.sectionHead p{color:var(--muted);margin:0 0 8px;font-size:13px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+.search,.select{padding:13px 16px;background:var(--ivory-card);border:2px solid var(--ink);border-radius:0;color:var(--ink);font-family:var(--sans);font-size:13px}
+.search{min-width:240px;flex:0 1 320px}
+.search:focus,.select:focus{outline:2px solid var(--red);outline-offset:1px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+
+/* Product card: ivory, sharp border, red offset shadow on hover */
+.card{background:var(--ivory-card);border:2px solid var(--ink);position:relative;transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--ink)}
+.pic{aspect-ratio:1/1;background:var(--ivory);border-bottom:2px solid var(--ink);overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative}
+.pic img{width:100%;height:100%;object-fit:cover;object-position:center;transition:filter .35s ease,transform .35s ease}
+.card:hover .pic img,.card:focus-within .pic img{filter:grayscale(1) contrast(1.15);transform:scale(1.05)}
+.tag{position:absolute;top:12px;left:12px;z-index:2;background:var(--red);color:var(--ivory);padding:6px 9px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+.info{padding:18px 18px 20px}
+.info h3{font-family:var(--serif);font-size:19px;line-height:1.15;margin:0 0 7px}
+.meta{font-size:11.5px;color:var(--muted);margin-bottom:13px;letter-spacing:.02em}
+.prices{display:flex;gap:10px;align-items:baseline}
+.sale{font-weight:800;font-size:17px;letter-spacing:-.02em}
+.mrp{text-decoration:line-through;color:#9b9385;font-size:13px}
+.add{width:100%;background:var(--ink);color:var(--ivory);padding:12px;margin-top:16px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;transition:background .15s}
+.add:hover{background:var(--red)}
+.empty{color:var(--muted);line-height:1.6}
+
+/* ============ 6. Offer + story + footer ============ */
+.deal{margin:0 5vw clamp(48px,6vw,80px);background:var(--ink);color:var(--ivory);padding:34px 38px;display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.deal .eyebrow{color:#e9b356}
+.deal h2{font-family:var(--serif);font-size:clamp(26px,3vw,36px);margin:6px 0 6px}
+.deal .timer{font-family:var(--display);font-size:clamp(26px,3vw,40px);letter-spacing:.04em;color:var(--red)}
+.story{max-width:1400px;margin:0 auto;padding:0 5vw 70px}
+.story-panel{background:var(--ivory-card);border:2px solid var(--ink);padding:32px 34px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.story-panel h3{font-family:var(--serif);font-size:17px;margin:0 0 10px}
+.story-panel p{color:var(--muted);font-size:13.5px;line-height:1.65;margin:0}
+.footer{background:var(--ink);color:var(--ivory);padding:52px 5vw;display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;border-top:2px solid var(--ink)}
+.footer .brand{color:var(--ivory)}
+.footer .brand span{color:var(--ivory)}
+.footer b{display:block;margin-bottom:8px;font-size:12px;text-transform:uppercase;letter-spacing:.14em}
+.footer p{color:rgba(244,238,225,.8);font-size:13px;margin:0 0 4px;line-height:1.7}
+
+/* ============ 7. Cart drawer ============ */
+.drawer{position:fixed;right:-420px;top:0;width:390px;max-width:92vw;height:100%;background:var(--ivory-card);z-index:40;box-shadow:-10px 0 30px rgba(0,0,0,.15);padding:25px;transition:right .3s ease;border-left:2px solid var(--ink)}
+.drawer.open{right:0}
+.close{float:right;font-size:26px;line-height:1}
+.close:hover{color:var(--ink)}
+.drawer h2{font-family:var(--serif);font-size:30px;margin:34px 0 18px}
+.item{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding:14px 0;font-size:14px}
+.item small{color:var(--muted)}
+.shipNote{font:600 10px/1.5 var(--sans);color:var(--muted);text-align:center;margin:0 0 10px}
+.checkout{position:absolute};bottom:26px;left:25px;right:25px;background:var(--red);color:var(--ivory);padding:16px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+.checkout:hover{background:var(--red-deep)}
+
+/* ============ 7b. Brand logo + gallery wall ============ */
+.brandLogo{display:inline-flex;align-items:center;padding:2px 0}
+.brandLogo img{height:44px;width:auto;display:block}
+.footLogo{display:inline-block;margin-bottom:10px}
+.footLogo img{height:52px;width:auto;display:block}
+.footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.gallery{max-width:1400px;margin:auto;padding:0 5vw clamp(48px,6vw,72px)}
+.gwall{display:grid;grid-template-columns:repeat(auto-fill,minmax(122px,1fr));gap:10px}
+.gt{margin:0}
+.gtimg{position:relative;aspect-ratio:1/1;border:1px solid var(--line);background:var(--ivory-card);overflow:hidden}
+.gtimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.soonBadge{display:none;position:absolute;inset:0;align-items:center;justify-content:center;background:#efe8d8;border-left:3px solid var(--line);font:700 9px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink);text-align:center;padding:6px}
+.gt.soon .soonBadge{display:flex}
+.gt.soon img{visibility:hidden}
+.gt figcaption{display:block;margin-top:5px;font:600 9px/1.35 var(--sans);color:var(--muted);letter-spacing:.02em;text-align:center;min-height:25px}
+
+/* ============ 7c. Studio band (red) + download modal ============ */
+
+.cmade{margin-top:8px;background:var(--ivory);border:1px dashed var(--ink);border-radius:6px;font-size:10.5px;line-height:1.55;color:var(--ink)}
+.cmade summary{cursor:pointer;padding:7px 10px;font-weight:800;letter-spacing:.06em}
+.cmade summary:hover{background:rgba(201,55,42,.08)}
+.card .pic img.noimg{display:none}
+.card .ph{display:none;position:absolute;inset:0;align-items:center;justify-content:center;text-align:center;padding:14px;background:var(--ivory-card);color:var(--ink);font:700 13px/1.5 var(--sans)}
+.card .pic img.noimg + .ph{display:flex}
+.card .ph b{display:block;color:var(--red);font:800 11px var(--sans);letter-spacing:.12em;margin-bottom:6px}
+.card.soon .tag{background:var(--ink)}
+.cnum{position:absolute;top:10px;right:10px;z-index:2;background:var(--ink);color:var(--ivory);font:800 10px var(--sans);letter-spacing:.08em;padding:4px 7px;border-radius:6px}
+  .gcanvas{background:var(--ivory-card);border:1px solid var(--line);border-radius:10px;padding:24px 28px;columns:3;column-gap:30px;font:500 12.5px/2 var(--sans);color:var(--muted)}
+.gn{display:block;break-inside:avoid}
+.gn b{color:var(--red);font-weight:800;margin-right:6px}
+.soonBig{margin:28px 0 0;text-align:center;font-family:var(--display);font-size:clamp(36px,6.5vw,84px);font-weight:900;letter-spacing:.08em;color:var(--red)}
+@media(max-width:900px){.gcanvas{columns:2}}
+@media(max-width:560px){.gcanvas{columns:1}}
+.cmade div{padding:0 10px 9px}
+.pnote{font:600 9px/1.45 var(--sans);color:var(--muted);margin-top:5px}
+.priceLine{font:600 10px/1.5 var(--sans);color:var(--muted);border-left:3px solid var(--ink);padding:4px 0 4px 10px;margin:10px 0 2px}
+.catChips{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 2px}
+.chipsLabel{font:800 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+.chip{border:1px solid var(--ink);background:transparent;color:var(--ink);padding:8px 14px;font:700 10px var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background .15s,color .15s}
+.chip:hover,.chip.on{background:var(--ink);color:var(--ivory)}
+.catNote{min-height:18px;margin:6px 0 0;font:600 11px/1.5 var(--sans);color:var(--ink)};letter-spacing:.04em}
+.studioHead{background:#000;color:var(--ivory);display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:28px 5vw 22px;margin:0;box-shadow:none}
+.studioWrap{margin:0 0 0}
+.shareBar{position:fixed;left:14px;bottom:14px;z-index:120;display:flex;gap:8px;flex-wrap:wrap}
+.shareBar a{background:var(--ink);color:var(--ivory);padding:10px 14px;border-radius:6px;font:700 11px var(--sans);letter-spacing:.08em;text-decoration:none;box-shadow:0 4px 14px rgba(24,20,16,.25)}
+.shareBar a.shw{background:#128c4b}
+.shareBar a:hover{transform:translateY(-2px)}
+@media(max-width:600px){.shareBar{left:8px;bottom:8px}.shareBar a{padding:8px 10px;font-size:10px}}
+.studioMap{display:block;width:100%;height:340px;border:0;filter:grayscale(.3) contrast(1.05);transition:filter .4s}
+.studioMap:hover{filter:none}
+.shAddr{margin:8px 0 0;font:500 12px/1.5 var(--sans);color:#bdb6a6;letter-spacing:.03em}
+@media(max-width:600px){.studioMap{height:240px}}
+.shTitle{font-family:var(--display);font-size:clamp(22px,3.2vw,40px);line-height:1.05;letter-spacing:.01em}
+.shTitle .bl{display:inline-block;white-space:pre;animation:letterBounce 2.8s ease-in-out infinite}
+@keyframes letterBounce{0%,100%{transform:translateY(0)}8%{transform:translateY(-14px)}16%{transform:translateY(0)}22%{transform:translateY(-6px)}28%{transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.shTitle .bl{animation:none}}}
+.studioHead #galcount{margin:10px 0 0;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.92}
+.shMap{background:var(--ink);color:var(--ivory);border:1px solid var(--ivory);padding:14px 18px;font:700 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.shMap:hover{background:var(--ivory);color:var(--ink)}
+.dlmodal{position:fixed;inset:0;background:rgba(24,20,16,.78);display:none;align-items:center;justify-content:center;z-index:140;padding:16px}
+.dlmodal.open{display:flex}
+.dlbox{background:var(--ivory-card);border:1px solid var(--line);max-width:640px;width:100%;position:relative;box-shadow:14px 14px 0 var(--ink)}
+.dlbox>img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
+.dlx{position:absolute;top:8px;right:8px;background:var(--ink);color:var(--ivory);border:0;width:34px;height:34px;font:700 14px var(--sans);cursor:pointer}
+.dlbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;border-top:1px solid var(--line)}
+.dlbar h3{font-family:var(--display);font-size:16px;letter-spacing:.02em}
+.dlbar p{font-size:11px;color:var(--muted);margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
+.dlbtn{background:var(--red);color:var(--ivory);border:0;padding:12px 18px;font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;flex:0 0 auto}
+.dlbtn:hover{background:var(--red-deep)}
+
+
+/* ============ Script-wise fonts (language switch) ============ */
+html[lang="hi"],html[lang="mr"],html[lang="kok"],html[lang="mai"],html[lang="doi"],html[lang="ks"],html[lang="brx"],html[lang="sa"],html[lang="sd"]{--display:"Noto Sans Devanagari","Nirmala UI","Mangal",system-ui,sans-serif;--serif:"Noto Serif Devanagari","Nirmala UI",Georgia,serif;--sans:"Noto Sans Devanagari","Nirmala UI","Mangal",system-ui,sans-serif}
+html[lang="bn"],html[lang="as"],html[lang="mni"]{--display:"Noto Sans Bengali","Nirmala UI","Vrinda",system-ui,sans-serif;--serif:"Noto Serif Bengali","Vrinda",Georgia,serif;--sans:"Noto Sans Bengali","Nirmala UI","Vrinda",system-ui,sans-serif}
+html[lang="ta"]{--display:"Noto Sans Tamil","Latha","Tamil Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Tamil","Latha",Georgia,serif;--sans:"Noto Sans Tamil","Latha","Tamil Sangam MN",system-ui,sans-serif}
+html[lang="te"]{--display:"Noto Sans Telugu","Gautami","Telugu Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Telugu","Gautami",Georgia,serif;--sans:"Noto Sans Telugu","Gautami","Telugu Sangam MN",system-ui,sans-serif}
+html[lang="kn"]{--display:"Noto Sans Kannada","Tunga","Kannada Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Kannada","Tunga",Georgia,serif;--sans:"Noto Sans Kannada","Tunga","Kannada Sangam MN",system-ui,sans-serif}
+html[lang="ml"]{--display:"Noto Sans Malayalam","Kartika","Malayalam Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Malayalam","Kartika",Georgia,serif;--sans:"Noto Sans Malayalam","Kartika","Malayalam Sangam MN",system-ui,sans-serif}
+html[lang="or"]{--display:"Noto Sans Oriya","Kalinga","Oriya Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Oriya","Kalinga",Georgia,serif;--sans:"Noto Sans Oriya","Kalinga","Oriya Sangam MN",system-ui,sans-serif}
+html[lang="pa"]{--display:"Noto Sans Gurmukhi","Raavi","Gurmukhi MN",system-ui,sans-serif;--serif:"Noto Serif Gurmukhi","Raavi",Georgia,serif;--sans:"Noto Sans Gurmukhi","Raavi","Gurmukhi MN",system-ui,sans-serif}
+html[lang="gu"]{--display:"Noto Sans Gujarati","Shruti","Gujarati Sangam MN",system-ui,sans-serif;--serif:"Noto Serif Gujarati","Shruti",Georgia,serif;--sans:"Noto Sans Gujarati","Shruti","Gujarati Sangam MN",system-ui,sans-serif}
+html[lang="ur"]{--display:"Noto Nastaliq Urdu","Urdu Typesetting","Jameel Noori Nastaleeq",serif;--serif:"Noto Nastaliq Urdu","Urdu Typesetting",serif;--sans:"Noto Nastaliq Urdu","Urdu Typesetting",serif}
+html[lang="sat"]{--display:"Noto Sans Ol Chiki",system-ui,sans-serif;--serif:"Noto Sans Ol Chiki",Georgia,serif;--sans:"Noto Sans Ol Chiki",system-ui,sans-serif}
+
+/* ============ 8. Responsive ============ */
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){
+  .navlinks{display:flex;gap:16px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+  .nav{height:72px}
+  .hero{grid-template-columns:1fr;padding-top:44px}
+  .hero-art{max-width:520px;height:clamp(280px,52vw,400px);box-shadow:10px 10px 0 var(--ink)}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .stats div:nth-child(3){border-right:0}
+  .stats div:nth-child(-n+3){border-bottom:1px solid var(--line)}
+  .story-panel{grid-template-columns:1fr;gap:24px}
+  .sectionHead{display:block}
+}
+@media(max-width:560px){
+  .actions{gap:6px}
+  .langPick{padding:5px 6px;margin-right:2px}
+  .langPick select{max-width:80px;font-size:9px}
+  .cartBtn{padding:11px 12px;font-size:10px}
+  .grid{grid-template-columns:1fr}
+  .pic{aspect-ratio:4/3.4}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats div{border-right:0;border-bottom:1px solid var(--line)}
+  .stats div:nth-child(odd){border-right:1px solid var(--line)}
+  .stats div:nth-child(5),.stats div:nth-child(6){border-bottom:0}
+  .hero h1{font-size:clamp(44px,13vw,64px)}
+  .deal{padding:26px 22px}
+  .footer{display:block}
+  .footer>div{margin-bottom:26px}
+}
+</style>
+<!-- ===== Google Analytics 4 — traffic data. G-XXXXXXXXXX ko apne Measurement ID se badlein (2 jagah) ===== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<div class="top">Monsoon Edit · Buy 2+, get an extra 10% off · Free shipping across India</div>
+<header class="nav"><a class="brandLogo" href="#top" aria-label="ArtVision DesiMuseum home"><img src="logo_full.png" alt="ArtVision DesiMuseum — Production & Design"></a><nav class="navlinks" aria-label="Primary"><a href="#shop" data-i18n="nav1">Shop all</a><a href="#story" data-i18n="nav3">Our story</a></nav><div class="actions"><div class="langPick"><span aria-hidden="true">🌐</span><select id="langSel" aria-label="Choose your language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="mr">मराठी</option><option value="te">తెలుగు</option><option value="ta">தமிழ்</option><option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option><option value="ml">മലയാളം</option><option value="or">ଓଡ଼ିଆ</option><option value="pa">ਪੰਜਾਬੀ</option><option value="as">অসমীয়া</option><option value="ur">اردو</option><option value="ne">नेपाली</option><option value="sa">संस्कृतम्</option><option value="ks">कॉशुर</option><option value="kok">कोंकणी</option><option value="mai">मैथिली</option><option value="doi">डोगरी</option><option value="brx">बड़ो</option><option value="mni">মৈতৈলোন্</option><option value="sat">ᱥᱟᱱᱛᱟᱲᱤ</option><option value="sd">सिन्धी</option></select></div><button class="icon" aria-label="Search the collection" onclick="focusSearch()">⌕</button><button class="cartBtn" onclick="toggleCart()">Bag (<b id="count">0</b>)</button></div></header>
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Made in India · Gift-ready · CUSTOM MADE</div>
+    <h1><span class="shine">भारत की कहानियाँ,</span><br><em>in your hands.</em></h1>
+    <p>Discover museum-grade wall art — canvas prints, framed canvases and custom-cut wall pieces inspired by the folk art of Indian states. Made to hang. Made to be asked about. Made to gift.</p>
+    <a class="cta" href="#shop" data-i18n="cta">Shop the collection →</a>
+  </div>
+</section>
+<figure class="hero-art" id="mapHover">
+  <img class="layer base" src="india_map_full.jpg" alt="Folk-art illustrated map of India with decorative border, shown in black and white">
+  <img class="layer colour" id="mapColour" src="india_map_full.jpg" alt="" aria-hidden="true">
+</figure>
+
+
+<section class="stats" aria-label="Collection highlights"><div><strong>22</strong><span data-i18n="st1">LANGUAGES</span></div><div><strong>705</strong><span data-i18n="st2">TRIBES HONOURED</span></div><div><strong>1</strong><span data-i18n="st3">CANVAS</span></div></section>
+
+<section class="typeStrip" aria-label="Canvas type samples"><h3 data-i18n="tsh">Canvas types — live samples</h3><div class="tsGrid" id="tsGrid"></div></section>
+
+<section class="manifesto"><p>Every language of the Eighth Schedule. One canvas.</p><small>Day: a museum-grade print. Night: a glowing atlas of living traditions.</small></section>
+
+
+
+<section class="shop" id="shop">
+  <div class="sectionHead">
+    <div><div class="eyebrow">Indian folk art wall prints &amp; framed canvas</div><h2 data-i18n="storyh">Pick your story</h2></div>
+    <p id="result">705 tribe artworks · ₹700 onwards</p>
+  </div>
+  <div class="controls">
+    <input class="search" id="search" placeholder="Search a state, craft or story…" data-i18n-ph="ph" oninput="render()" aria-label="Search a state, craft or story">
+    <select class="select" id="filter" onchange="render()" aria-label="Filter by collection">
+      <option value="all">All collections</option>
+      <option value="region">Regions of India</option>
+      <option value="craft">Folk &amp; craft</option>
+      <option value="nature">Nature &amp; wildlife</option>
+      <option value="tribal">Tribal traditions</option>
+      <option value="language">Languages of India</option><option value="general">General / अनारक्षित वर्ग</option><option value="obc">OBC / अन्य पिछड़ी वर्ग</option><option value="sc">SC / अनुसूचित जाति</option><option value="stc">ST / अनुसूचित जनजाति</option><option value="ews">EWS / आर्थिक कमज़ोर वर्ग</option><option value="creamy">क्रीमी / नॉन-क्रीमी लेयर</option><option value="soon">Coming Soon</option>
+    </select>
+  </div>
+  <div class="catChips" id="catChips" aria-label="Categories">
+    <span class="chipsLabel">Categories:</span>
+    <button class="chip on" data-cat="all" onclick="pickCat('all')">All</button>
+    <button class="chip" data-cat="general" onclick="pickCat('general')">General</button>
+    <button class="chip" data-cat="obc" onclick="pickCat('obc')">OBC</button>
+    <button class="chip" data-cat="sc" onclick="pickCat('sc')">SC</button>
+    <button class="chip" data-cat="stc" onclick="pickCat('stc')">ST</button>
+    <button class="chip" data-cat="ews" onclick="pickCat('ews')">EWS</button>
+    <button class="chip" data-cat="creamy" onclick="pickCat('creamy')">Creamy</button>
+    <button class="chip" data-cat="region" onclick="pickCat('region')">Regions</button>
+    <button class="chip" data-cat="craft" onclick="pickCat('craft')">Craft</button>
+    <button class="chip" data-cat="nature" onclick="pickCat('nature')">Nature</button>
+    <button class="chip" data-cat="tribal" onclick="pickCat('tribal')">Tribal</button>
+    <button class="chip" data-cat="soon" onclick="pickCat('soon')">Coming Soon</button>
+  </div>
+  <p id="catNote" class="catNote"></p>
+  <p class="trustLine">🚚 Free shipping over ₹9,999 · Pan-India delivery · 🎁 Gift-ready packaging · ✂️ Custom sizes &amp; modification · 🔒 Secure WhatsApp checkout</p>
+  <p class="priceLine">Rate original print / cutting file ka hai · Wall canvas ka final price recce ke baad material, printing, cutting, handmade crafting & size par depend karta hai · Modification available — 20% extra</p>
+  <div class="grid" id="grid"></div>
+  <button id="moreBtn" class="moreBtn" onclick="showMore()" hidden></button>
+</section>
+
+
+
+
+<section class="deal" aria-label="Limited-time offer">
+  <div><div class="eyebrow">Limited-time offer</div><h2>Build your own India box</h2><div>Buy any 3 decks and save ₹300. Offer ends soon.</div></div>
+  <div class="timer" id="timer">23:59:59</div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-panel">
+    <div><h3>Why ArtVision DesiMuseum?</h3><p>Because the best conversations never start with “so, what do you do?” They start when a guest stops in front of your wall and asks — “wait, where is this from? Is this real folk art?” Every ArtVision DesiMuseum piece is a researched Indian folk or tribal artwork — printed on museum-grade canvas, framed and ready to hang. You bought wall art. You got the story of an Indian state, on your wall.</p></div>
+    <div><h3>The gift nobody re-gifts</h3><p>Most gifts retire to a shelf. Ours goes straight on the wall. Birthdays, housewarmings, new offices, Diwali — one frame up, and the entire room changes character. Small parcel. Big story. Zero chance of re-gifting.</p></div>
+    <div><h3>Made for sharing</h3><p>Hang it. Tell the story. Every piece carries its craft, tribe and region — Warli from Maharashtra, Pattachitra from Odisha, Phulkari fields from Punjab. Guests ask, you answer, the wall does the rest. Tag <a href="https://www.instagram.com/artvision_studion/" target="_blank" rel="noopener"><strong>@artvision_studion</strong></a> — the best walls become part of our story.</p></div>
+  </div>
+</section>
+</main>
+
+<div class="studioWrap">
+<div class="studioHead"><div class="shLeft"><div class="shTitle">ArtViSiON: PRODUCTion DESiGN, Indore STUDION</div><p id="galcount"></p><p class="shAddr">Near Govt. High School, Bicholi Mardana, Indore, MP 452016 · ⭐ 5.0 (3 reviews)</p></div><a class="shMap" href="https://maps.app.goo.gl/nZiddxLS4Nasa5Jb7" target="_blank" rel="noopener">📍 Studio on Google Maps — raasta dekhiye</a></div>
+<iframe class="studioMap" src="https://maps.google.com/maps?q=22.696176,75.929025&amp;z=16&amp;output=embed" loading="lazy" title="ArtVision DesiMuseum location — Bicholi Mardana, Indore"></iframe>
+</div>
+<div class="strip"><div class="stripTrack"><span>✦ Artist-led</span><span>✦ Museum-worthy design</span><span>✦ Made in India</span><span>✦ Gift-ready</span><span>✦ Custom made</span><span>✦ 705 tribes honoured</span><span>✦ Artist-led</span><span>✦ Museum-worthy design</span><span>✦ Made in India</span><span>✦ Gift-ready</span><span>✦ Custom made</span><span>✦ 705 tribes honoured</span></div></div>
+<div class="shareBar" aria-label="Share ArtVision DesiMuseum"><a class="shw" href="https://wa.me/?text=%F0%9F%87%AE%F0%9F%87%B3%20ArtVision%20DesiMuseum%20%E2%80%94%20Bharat%20ki%20har%20state%2C%20har%20craft%2C%20har%20kahani%20%E2%80%94%20ek%20canvas%20par%21%20714%20folk%20artworks%20%C2%B7%2022%20bhashayein%20%C2%B7%20705%20tribes.%20Dekhiye%3A%20https%3A//rjsarkar83.github.io/ArtVision_DesiMuseum" target="_blank" rel="noopener">📲 WhatsApp par share karein</a><a href="https://www.instagram.com/artvision_studion/" target="_blank" rel="noopener">📸 Follow</a><a href="https://in.pinterest.com/ranjansarkar83/" target="_blank" rel="noopener">📌 Pinterest</a></div>
+<footer class="footer" id="journal">
+  <div><div class="footLogo"><img src="logo_icon.png" alt="ArtVision DesiMuseum logo"></div><div class="brand" style="color:var(--ivory)">ArtVision<span>DesiMuseum</span></div><p>Small objects. Big stories.</p></div>
+  <div><b>Say hello</b><p><a href="mailto:artvisioncnc@gmail.com">artvisioncnc@gmail.com</a><br><a href="https://www.instagram.com/artvision_studion/" target="_blank" rel="noopener">Instagram · @artvision_studion</a><br><a href="https://wa.me/919009001551" target="_blank" rel="noopener">WhatsApp · +91 90090 01551</a><br><a href="https://in.pinterest.com/ranjansarkar83/" target="_blank" rel="noopener">Pinterest · ranjansarkar83</a></p></div>
+  <div><b>We ship with care</b><p>Free shipping over ₹9,999<br>We do not offer returns or exchanges unless the purchased item is defective or damaged.</p></div>
+</footer>
+
+<div class="dlmodal" id="dlmodal" role="dialog" aria-modal="true" aria-label="Artwork download">
+  <div class="dlbox">
+    <button class="dlx" aria-label="Close" onclick="closeDownload()">✕</button>
+    <img id="dlimg" alt="">
+    <div class="dlbar">
+      <div><h3 id="dltitle"></h3><p>Download with ArtVision DesiMuseum watermark</p></div>
+      <button class="dlbtn" id="dlbtn" onclick="downloadArtwork()">Download JPG</button>
+    </div>
+  </div>
+</div>
+
+<aside class="drawer" id="drawer" aria-label="Shopping bag">
+  <button class="close" aria-label="Close bag" onclick="toggleCart()">×</button>
+  <h2>Your bag</h2>
+  <div id="bag"></div>
+  <p class="shipNote">Free shipping over ₹9,999 · No returns unless item is defective or damaged</p>
+  <button class="checkout" onclick="checkout()">Checkout on WhatsApp · <span id="total">₹0</span></button>
+</aside>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<script>
+const products=[
+['Rajasthan Marwari','Royal Rajasthan','399','599','region'],['Central Gond','Forest stories','449','649','craft'],['Bengal River','Stories of the Sundarbans','449','649','nature'],['Kashmir Pashmina','The craft of warmth','499','699','craft'],['Himachal Temple','Mountain traditions','399','599','region'],['Maharashtra Warli','Lines that tell stories','399','599','craft'],['Gujarat Garba','Dance of devotion','449','649','region'],['Tamil Gopuram','Sacred South India','499','699','region'],['Kerala Backwaters','God’s own green','449','649','nature'],['Nagaland Hornbill','Wild north-east','499','699','nature'],['Punjab Phulkari','Threads of joy','399','599','craft'],['Mithila Madhubani','Painted poetry','399','599','craft'],['Odisha Konark','Sun, stone and time','499','699','region'],['Telugu Kalamkari','Hand-painted heritage','449','649','craft'],['Ladakh Bhotia','High-altitude stories','499','699','region'],['Uttarakhand Aipan','Ritual lines','399','599','craft'],['Jammu Dogri','Valley folk art','449','649','region'],['Haryana Kurukshetra','Land of legends','399','599','region'],['Sindhi Ajrak','Indigo geometry','449','649','craft'],['Sikkim','Eastern horizons','399','599','region'],['Gaddi Tribal','Himalayan life','449','649','region'],['Nicobar Islands','Island rhythms','499','699','nature'],['Assam Rhino','Wild India','449','649','nature'],['Manipur Sangai','The dancing deer','499','699','nature'],['Meghalaya Root Bridge','Living architecture','449','649','nature'],['Mizoram Cheraw','Bamboo and beat','399','599','craft'],['Arunachal Monpa','Mountain monastery','499','699','region'],['Tripura Unakoti','Ancient stone stories','399','599','region'],['Bodo Bagurumba','Spring dance','399','599','craft'],['Mising Loom','Woven identity','449','649','craft'],['Garo Wangala','Harvest celebration','399','599','craft'],['Karbi Jambili','Festival of colour','449','649','craft'],['Bhil Dotwork','Dots of the forest','399','599','craft'],['Bastar Dhokra','Metal craft heritage','499','699','craft'],['Saura Ikon','Sacred wall art','399','599','craft'],['Toda Nilgiri','Mountain embroidery','449','649','craft'],['Santhal Baha','Flower festival','399','599','craft'],['Munda Sarna','Sacred grove','399','599','nature'],['Korku Satpura','Forest community','449','649','nature'],['Baiga Godna','Body art stories','399','599','craft'],['Soliga Honeycomb','Forest harvest','449','649','nature'],['Oraon Karma','Circle of celebration','399','599','craft'],['Goa Konkani','Coastal colour','449','649','region'],['Kodava Coorg','Coffee country','449','649','region'],['Malwa Mandu','Heart of Madhya Pradesh','399','599','region'],['Baghelkhand Tiger','Central Indian wild','499','699','nature'],['Chhattisgarh Rautnach','Folk performance','399','599','craft'],['Sanskrit Nalanda','Ancient knowledge','449','649','region'],['Lucknow Urdu Awadh','Nawabi elegance','449','649','region'],['Gujjar Herders','Pastoral India','399','599','nature'],['Khasi Nongkrem','Harvest dance','399','599','craft'],['Apatani Nyishi','Valley life','449','649','region'],['Lepcha Loom','Threads of Sikkim','449','649','craft'],['Dimasa Kachari','Hill heritage','399','599','region'],['Ho Sarhul','Spring festival','399','599','craft'],['Garasia Dance','Rhythm of Rajasthan','449','649','craft'],['Irula Cobra','Forest wisdom','399','599','nature'],['Banjara Lambani','Mirrorwork stories','449','649','craft'],['Bhotiya Himalaya','Mountain communities','449','649','region'],['Konyak Angami','Naga traditions','499','699','craft'],['Bhutia Panglhso','Sikkimese stories','449','649','region'],['Reang Hojagiri','Balance and grace','399','599','craft'],['Chenchu Nallamala','Forest life','399','599','nature'],['Siddi Dhamal','Coastal rhythm','399','599','craft'],['Madia Gotul','Gondwana nights','449','649','craft']
+];
+let bag=[];
+
+/* Stable per-product artwork assignment (local assets only) */
+const artMatch=[['himachal','art_min_himachal.jpg'],['uttarakhand','art_min_uttarakhand.jpg'],['punjab','art_min_punjab.jpg'],['tamil','art_min_tamil.jpg'],['ladakh','art_min_ladakh.jpg'],['goa','art_min_goa.jpg'],['sikkim','art_min_sikkim.jpg'],['nicobar','art_min_nicobar.jpg'],['malwa','art_min_malwa.jpg'],['baghelkhand','art_min_baghelkhand.jpg'],['ajrak','art_folk_ajrak.jpg'],['kalamkari','art_folk_kalamkari.jpg'],['bhil','art_folk_bhil.jpg'],['dhokra','art_folk_dhokra.jpg'],['gaddi','art_folk_gaddi.jpg'],['sikkim','art_folk_sikkim.jpg'],['nicobar','art_folk_nicobar.jpg'],['monpa','art_folk_monpa.jpg'],['korku','art_folk_korku.jpg'],['malwa','art_folk_mandu.jpg'],['baghelkhand','art_folk_baghelkhand.jpg'],['chenchu','art_folk_chenchu.jpg'],['irula','art_folk_irula.jpg'],['central gond','art_folk_gond.jpg'],['phulkari','art_folk_phulkari.jpg'],['dogri','art_folk_dogra.jpg'],['haryana','art_folk_haryana.jpg'],['nongkrem','art_folk_nongkrem.jpg'],['apatani','art_folk_apatani.jpg'],['dimasa','art_folk_dimasa.jpg'],['garasia','art_folk_garasia.jpg'],['bhotiya','art_folk_bhotiya.jpg'],['konyak','art_folk_konyak.jpg'],['bhutia','art_folk_bhutia.jpg'],['gotul','art_folk_gotul.jpg'],['tamil','art_folk_gopuram.jpg'],['nagaland','art_folk_hornbill.jpg'],['uttarakhand','art_folk_aipan.jpg'],['tripura','art_folk_unakoti.jpg'],['karbi','art_folk_jambili.jpg'],['rautnach','art_folk_rautnach.jpg'],['sanskrit','art_folk_nalanda.jpg'],['gujjar','art_folk_gujjar.jpg'],['sarhul','art_folk_sarhul.jpg'],['banjara','art_folk_lambani.jpg'],['mithila','art_folk_madhubani.jpg'],['sangai','art_folk_sangai.jpg'],['cheraw','art_folk_cheraw.jpg'],['wangala','art_folk_wangala.jpg'],['saura','art_folk_saura.jpg'],['toda','art_folk_toda.jpg'],['baiga','art_folk_godna.jpg'],['soliga','art_folk_soliga.jpg'],['himachal','art_folk_kangra.jpg'],['goa','art_folk_konkan.jpg'],['ladakh','art_folk_ladakh.jpg'],['root bridge','art_folk_rootbridge.jpg'],['santhal','art_folk_jadopatia.jpg'],['oraon','art_folk_chhau.jpg'],['munda','art_folk_sarna.jpg'],['mising','art_folk_misingloom.jpg'],['lepcha','art_folk_lepcha.jpg'],['siddi','art_folk_dhamal.jpg'],['reang','art_folk_hojagiri.jpg'],['bodo','art_folk_bagurumba.jpg'],
+  /* Creative series */
+  ['maharashtra','art_wallpaper_mumbai.jpg'],
+  ['marwari','art_wallpaper_jaipur.jpg'],
+  ['lucknow','art_wallpaper_varanasi.jpg'],
+  ['ladakh','art_creative_train_window.jpg'],
+  ['santhal','art_creative_diya_river.jpg'],
+  ['jammu','art_cutout_hands.jpg'],
+  ['konark','art_wallpaper_odisha.jpg'],
+  ['munda','art_creative_madhubani_cosmos.jpg'],
+  ['haryana','art_cnc_konark_spokes.jpg'],
+  ['kashmir','art_wallpaper_srinagar.jpg'],
+  ['bhotia','art_wall_camelfair.jpg'],
+  ['sarhul','art_wall_camelfair.jpg'],
+  ['dimasa','art_cutout_bharat.jpg'],
+  ['saura','art_backlit_madhubani_translite.jpg'],
+  ['sarhul','art_wall_camelfair.jpg'],
+  /* Glow / night atlas series */
+  ['oraon','art_wall_dancer.jpg'],
+  ['baghelkhand','art_cutout_tiger.jpg'],
+  ['gopuram','art_wall_potters.jpg'],
+  ['mithila','art_wall_rangoli.jpg'],
+  ['arunachal','art_laserlit_monastery.jpg'],
+  ['kerala','art_wallpaper_kerala.jpg'],
+  ['pashmina','art_wallpaper_srinagar.jpg'],
+  ['nagaland','art_wall_weavers.jpg'],
+  ['goa','art_creative_gully_cricket.jpg'],
+  ['garba','art_wallpaper_bhuj.jpg'],
+  ['gujarat','art_wallpaper_jaipur.jpg'],
+  /* Acrylic masterpiece series */
+  ['himachal','art_acrylic_snow_leopard.jpg'],
+  ['assam','art_wallpaper_assam.jpg'],
+  ['chhattisgarh','art_acrylic_kathak_dancer.jpg'],
+  ['sanskrit','art_acrylic_sitar_player.jpg'],
+  ['munda','art_laserlit_banyan.jpg'],
+  ['meghalaya','art_neon_tube_umbrella.jpg'],
+  ['jammu','art_wallpaper_srinagar.jpg'],
+  ['santhal','art_wall_rangoli.jpg'],
+  /* Real-room gallery series */
+  ['haryana','art_wall_camelfair.jpg'],
+  ['kodava','art_wallpaper_mysore.jpg'],
+  ['banjara','art_room_hallway_kutch.jpg'],
+  ['bengal','art_wallpaper_kolkata.jpg'],
+  ['bodo','art_cnc_warli_dancers.jpg'],
+  ['odisha','art_cnc_konark_spokes.jpg'],
+  ['korku','art_wall_honeygather.jpg'],
+  ['siddi','art_cnc_wave_backwater.jpg'],
+  ['malwa','art_wall_musicians.jpg'],
+  ['sikkim','art_cnc_himalaya_ridge.jpg'],
+  ['khasi','art_neon_tube_peacock.jpg'],
+  ['sarhul','art_neon_tube_lotus.jpg'],
+  ['manipur','art_wall_fisherfolk.jpg'],
+  ['apatani','art_room_veranda_boats.jpg'],
+  ['gaddi','art_wall_shepherd.jpg'],
+  ['gujjar','art_neon_tube_taj.jpg'],
+  ['dimasa','art_emboss_stepwell.jpg'],
+  ['garo','art_pichwai_cow.jpg'],
+  ['baiga','art_neon_tube_lotus.jpg'],
+  ['madia','art_acrylic_camel_dunes.jpg'],
+  /* Embossed 3D layer series */
+  ['irula','art_emboss_cobra.jpg'],
+  ['mizoram','art_emboss_bamboo_grove.jpg'],
+  ['mising','art_emboss_hawa_mahal.jpg'],
+  ['toda','art_emboss_sangai.jpg'],
+  ['soliga','art_emboss_rhino.jpg'],
+  ['reang','art_emboss_lotus_temple.jpg'],
+  ['chenchu','art_laserlit_banyan.jpg'],
+  ['lepcha','art_wall_paisley.jpg'],
+  ['himalaya','art_room_counter_spices.jpg'],
+  ['bhutia','art_room_dining_thali.jpg'],
+  ['konyak','art_emboss_lion.jpg'],
+  ['garasia','art_phad_scroll.jpg'],
+  ['karbi','art_neon_tube_kathakali.jpg'],
+  ['uttarakhand','art_cutout_arch.jpg'],
+  ['oraon','art_wall_dancer.jpg'],
+  ['nicobar','art_emboss_dolphin.jpg'],
+  ['tripura','art_emboss_stepwell.jpg'],
+  ['maharashtra','art_cnc_warli_dancers.jpg'],
+  ['konark','art_cnc_konark_spokes.jpg'],
+  ['kalamkari','art_kalamkari.jpg'],
+  ['ajrak','art_ajrak_geometry.jpg'],
+  ['dhokra','art_dhokra_tribal.jpg'],
+  ['hornbill','art_hornbill.jpg'],
+  ['backwater','art_cnc_wave_backwater.jpg'],
+  ['tiger','art_wall_honeygather.jpg'],
+  ['kashmir','art_wallpaper_srinagar.jpg'],
+  ['warli','art_cnc_warli_dancers.jpg'],
+  ['madhubani','art_backlit_madhubani_translite.jpg'],['mithila','art_wall_rangoli.jpg'],
+  ['phulkari','art_phulkari.jpg'],
+  ['gond','art_gond_forest.jpg'],
+  ['bhil','art_tribal_dots.jpg'],['saura','art_tribal_dots.jpg'],
+  ['ladakh','art_acrylic_snow_leopard.jpg'],['bhotia','art_acrylic_snow_leopard.jpg'],['bhotiya','art_acrylic_snow_leopard.jpg'],['monpa','art_acrylic_snow_leopard.jpg'],['lepcha','art_acrylic_snow_leopard.jpg'],
+  ['gopuram','art_temple_gopuram.jpg'],['tamil','art_temple_gopuram.jpg'],
+  ['rajasthan','art_wall_camelfair.jpg'],['marwari','art_wall_camelfair.jpg'],['garasia','art_wall_camelfair.jpg'],
+  ['urdu','art_cutout_bharat.jpg'],['lucknow','art_cutout_bharat.jpg'],['awadh','art_cutout_bharat.jpg']
+];
+const artByCat={
+  region:['art_wall_camelfair.jpg','art_acrylic_snow_leopard.jpg','art_cutout_bharat.jpg','art_pichwai_cow.jpg','art_cnc_konark_spokes.jpg','art_phad_scroll.jpg','art_neon_tube_taj.jpg','art_acrylic_camel_dunes.jpg','art_acrylic_snow_leopard.jpg','art_wall_camelfair.jpg','art_wallpaper_mysore.jpg','art_room_hallway_kutch.jpg','art_cutout_arch.jpg','art_cnc_konark_spokes.jpg','art_cnc_himalaya_ridge.jpg','art_wall_musicians.jpg','art_emboss_hawa_mahal.jpg','art_emboss_stepwell.jpg','art_emboss_lotus_temple.jpg','art_creative_train_window.jpg','art_wallpaper_mumbai.jpg'],
+  craft:['art_cnc_warli_dancers.jpg','art_wall_rangoli.jpg','art_phulkari.jpg','art_wallpaper_srinagar.jpg','art_tribal_dots.jpg','art_gond_forest.jpg','art_kalamkari.jpg','art_ajrak_geometry.jpg','art_dhokra_tribal.jpg','art_phad_scroll.jpg','art_pichwai_cow.jpg','art_acrylic_kathak_dancer.jpg','art_acrylic_sitar_player.jpg','art_wall_shepherd.jpg','art_neon_tube_lotus.jpg','art_room_counter_spices.jpg','art_room_dining_thali.jpg','art_neon_tube_kathakali.jpg','art_wallpaper_kolkata.jpg','art_cnc_warli_dancers.jpg','art_wall_paisley.jpg','art_neon_tube_lotus.jpg','art_neon_tube_peacock.jpg','art_wallpaper_varanasi.jpg','art_wallpaper_jaipur.jpg','art_wallpaper_odisha.jpg','art_cutout_hands.jpg','art_creative_madhubani_cosmos.jpg'],
+  nature:['art_gond_forest.jpg','art_tribal_dots.jpg','art_acrylic_snow_leopard.jpg','art_wallpaper_assam.jpg','art_neon_tube_umbrella.jpg','art_laserlit_banyan.jpg','art_room_veranda_boats.jpg','art_wall_fisherfolk.jpg','art_wall_honeygather.jpg','art_cnc_wave_backwater.jpg','art_laserlit_banyan.jpg','art_emboss_rhino.jpg','art_emboss_lion.jpg','art_emboss_sangai.jpg','art_emboss_dolphin.jpg','art_creative_diya_river.jpg']
+};
+const ALLARTS=["art_acrylic_camel_dunes.jpg", "art_acrylic_kathak_dancer.jpg", "art_acrylic_sitar_player.jpg", "art_acrylic_snow_leopard.jpg", "art_ajrak_geometry.jpg", "art_backlit_madhubani_translite.jpg", "art_cnc_himalaya_ridge.jpg", "art_cnc_konark_spokes.jpg", "art_cnc_warli_dancers.jpg", "art_cnc_wave_backwater.jpg", "art_creative_diya_river.jpg", "art_creative_gully_cricket.jpg", "art_creative_madhubani_cosmos.jpg", "art_creative_train_window.jpg", "art_cutout_arch.jpg", "art_cutout_bharat.jpg", "art_cutout_hands.jpg", "art_cutout_tiger.jpg", "art_dhokra_tribal.jpg", "art_emboss_bamboo_grove.jpg", "art_emboss_cobra.jpg", "art_emboss_dolphin.jpg", "art_emboss_hawa_mahal.jpg", "art_emboss_lion.jpg", "art_emboss_lotus_temple.jpg", "art_emboss_rhino.jpg", "art_emboss_sangai.jpg", "art_emboss_stepwell.jpg", "art_emboss_zardozi_vine.jpg", "art_folk_aipan.jpg", "art_folk_ajrak.jpg", "art_folk_apatani.jpg", "art_folk_baghelkhand.jpg", "art_folk_bagurumba.jpg", "art_folk_basohli_painting.jpg", "art_folk_baul.jpg", "art_folk_bhil.jpg", "art_folk_bhotiya.jpg", "art_folk_bhutia.jpg", "art_folk_bihu.jpg", "art_folk_bishnoi.jpg", "art_folk_channapatna.jpg", "art_folk_chenchu.jpg", "art_folk_cheraw.jpg", "art_folk_cheriyal.jpg", "art_folk_chhau.jpg", "art_folk_dhamal.jpg", "art_folk_dhokra.jpg", "art_folk_dimasa.jpg", "art_folk_dogra.jpg", "art_folk_gaddi.jpg", "art_folk_ganjifa.jpg", "art_folk_garasia.jpg", "art_folk_godna.jpg", "art_folk_gond.jpg", "art_folk_gopuram.jpg", "art_folk_gotul.jpg", "art_folk_gujjar.jpg", "art_folk_haryana.jpg", "art_folk_hojagiri.jpg", "art_folk_hornbill.jpg", "art_folk_irula.jpg", "art_folk_jadopatia.jpg", "art_folk_jambili.jpg", "art_folk_kalamkari.jpg", "art_folk_kangra.jpg", "art_folk_kathak.jpg", "art_folk_kathakali.jpg", "art_folk_kavad.jpg", "art_folk_koli.jpg", "art_folk_kondapalli.jpg", "art_folk_konkan.jpg", "art_folk_konyak.jpg", "art_folk_korku.jpg", "art_folk_ladakh.jpg", "art_folk_lambani.jpg", "art_folk_lavani.jpg", "art_folk_lepcha.jpg", "art_folk_madhubani.jpg", "art_folk_mandu.jpg", "art_folk_manjusha.jpg", "art_folk_mata_ni_pachedi_cloth.jpg", "art_folk_miniature.jpg", "art_folk_misingloom.jpg", "art_folk_monpa.jpg", "art_folk_nalanda.jpg", "art_folk_nicobar.jpg", "art_folk_nirmal.jpg", "art_folk_nongkrem.jpg", "art_folk_odissi.jpg", "art_folk_pakhwaj.jpg", "art_folk_pattachitra.jpg", "art_folk_phulkari.jpg", "art_folk_rautnach.jpg", "art_folk_ravanhatta.jpg", "art_folk_rogan_cloth_art.jpg", "art_folk_rootbridge.jpg", "art_folk_sangai.jpg", "art_folk_sarhul.jpg", "art_folk_sarna.jpg", "art_folk_saura.jpg", "art_folk_sikki.jpg", "art_folk_sikkim.jpg", "art_folk_sohrai.jpg", "art_folk_soliga.jpg", "art_folk_thanjavur.jpg", "art_folk_thanjavur_gold_leaf_painting.jpg", "art_folk_theyyam.jpg", "art_folk_tholu_bommalata_shadow_puppets.jpg", "art_folk_tikuli_lac_art.jpg", "art_folk_toda.jpg", "art_folk_unakoti.jpg", "art_folk_wangala.jpg", "art_folk_warli.jpg", "art_folk_yakshagana.jpg", "art_gem_kundan_peacock.jpg", "art_gem_navratna_mandala.jpg", "art_gold_jali_ganesha.jpg", "art_gond_forest.jpg", "art_kalamkari.jpg", "art_laserlit_banyan.jpg", "art_laserlit_monastery.jpg", "art_min_assam.jpg", "art_min_baghelkhand.jpg", "art_min_bengal.jpg", "art_min_goa.jpg", "art_min_gujarat.jpg", "art_min_himachal.jpg", "art_min_kashmir.jpg", "art_min_kerala.jpg", "art_min_ladakh.jpg", "art_min_madhya.jpg", "art_min_maharashtra.jpg", "art_min_malwa.jpg", "art_min_nicobar.jpg", "art_min_odisha.jpg", "art_min_punjab.jpg", "art_min_rajasthan.jpg", "art_min_sikkim.jpg", "art_min_tamil.jpg", "art_min_telangana.jpg", "art_min_uttarakhand.jpg", "art_neon_tube_kathakali.jpg", "art_neon_tube_lotus.jpg", "art_neon_tube_peacock.jpg", "art_neon_tube_taj.jpg", "art_neon_tube_umbrella.jpg", "art_phad_scroll.jpg", "art_phulkari.jpg", "art_pichwai_cow.jpg", "art_room_counter_spices.jpg", "art_room_dining_thali.jpg", "art_room_hallway_kutch.jpg", "art_room_veranda_boats.jpg", "art_silver_ganga_aarti_thali.jpg", "art_silver_kolhapuri_saaj.jpg", "art_silver_nandi.jpg", "art_silver_peacock_pair.jpg", "art_silver_rajwadi_urn.jpg", "art_silver_tarakasi_chariot.jpg", "art_tribal_dots.jpg", "art_tribe_rathwa.jpg", "art_tribelife_weekly_haat_market.jpg", "art_uv_backwater.jpg", "art_uv_banaras.jpg", "art_uv_himalaya.jpg", "art_uv_holi.jpg", "art_uv_marigold.jpg", "art_uv_monsoon.jpg", "art_uv_peacock.jpg", "art_uv_spices.jpg", "art_uv_thar.jpg", "art_uv_tiger.jpg", "art_wall_camelfair.jpg", "art_wall_dancer.jpg", "art_wall_fisherfolk.jpg", "art_wall_honeygather.jpg", "art_wall_musicians.jpg", "art_wall_paisley.jpg", "art_wall_potters.jpg", "art_wall_rangoli.jpg", "art_wall_shepherd.jpg", "art_wall_weavers.jpg", "art_wallpaper_amritsar_golden_pool.jpg", "art_wallpaper_assam.jpg", "art_wallpaper_bhuj.jpg", "art_wallpaper_jaipur.jpg", "art_wallpaper_kerala.jpg", "art_wallpaper_kolkata.jpg", "art_wallpaper_mumbai.jpg", "art_wallpaper_mysore.jpg", "art_wallpaper_odisha.jpg", "art_wallpaper_srinagar.jpg", "art_wallpaper_varanasi.jpg", "art_wild_great_indian_bustard.jpg"];
+const ORDER=new Array(ALLARTS.length);
+(function(){
+ const day=Math.floor(Date.now()/86400000);
+ const used=new Set();
+ products.forEach((p,idx)=>{const n=p[0].toLowerCase();const m=artMatch.find(x=>n.includes(x[0]));if(m){ORDER[(idx+day)%ALLARTS.length]=m[1];used.add(m[1])}});
+ const rest=ALLARTS.filter(f=>!used.has(f));let ri=0;
+ for(let i=0;i<ORDER.length;i++){if(!ORDER[i])ORDER[i]=rest[ri++]}
+})();
+function artFor(p){if(p.length>6&&p[6])return p[6];const day=Math.floor(Date.now()/86400000);return ORDER[(products.indexOf(p)+day)%ORDER.length]}
+
+const ARTSPEC=[['art_wallpaper_','Luxury heritage non-woven wallpaper · 54 sq ft roll (3m × 2.7m) · wipeable matte',5999],['art_wall_','Hand-painted mural · lime-plaster (chuna) finish · up to 8×6 ft wall',6499],['art_neon_','Hand-bent LED neon on acrylic base · 20×28 in · 12V adapter',4499],['art_cnc_','Multi-layer CNC-carved MDF panel · 24×36 in · artwork-extending jaali',4799],['art_emboss_','Stacked glossy acrylic emboss · 20×28 in · deep box frame',3999],['art_acrylic_','Original hand-painted acrylic · 24×36 in · colour-matched frame',5499],['art_room_','In-situ room mural canvas · 400 GSM · laser wood frame · 24×36 in',4299],['art_cutout_','Frameless laser-cut layered acrylic · 18×24 in · edge-lit LED',3299],['art_laserlit_','Laser-engraved acrylic + LED glow · 20×28 in · walnut base',3799],['art_backlit_','Backlit translite fabric · 24×36 in · slim LED frame',3499],['art_creative_','Concept art print · 400 GSM matte canvas · 24×36 in · gallery frame',2499],['art_uv_','8K HD UV print · 400 GSM canvas · 24×36 in · float frame',2999],['art_min_','Minimal vector art · 380 GSM matte canvas · 18×24 in · museum frame',2199],['art_gold_','24K gold-leaf jaali panel · hand-burnished · 20×28 in · museum float frame',9499],['art_silver_','92.5 sterling tarakasi panel · mirror polish · 18×24 in · deep box frame',7999],['art_gem_','Kundan & navratna inlay · museum glass · 20×28 in · velvet box frame',11999],['art_','400 GSM UV canvas · 24×36 in · CNC frame',2499]];
+const FOLKSPEC=[['400 GSM UV canvas · 24×36 in · CNC frame',2499],['340 GSM matte canvas · 30×45 in · float teak frame',3499],['Textured cotton rag · 36×54 in · brass-corner frame',4999]];
+products.forEach(p=>{const a=artFor(p);let hit=null;for(const s of ARTSPEC){if(a.startsWith(s[0])){hit=s;break}}
+ if(hit&&hit[0]!=='art_'){p[5]=hit[1];p[2]=hit[2];p[3]=hit[2]*1.25}else{let h=0;for(let i=0;i<p[0].length;i++)h=(h*31+p[0].charCodeAt(i))>>>0;const fs=FOLKSPEC[h%3];p[5]=fs[0];p[2]=fs[1];p[3]=fs[1]*1.25}});
+
+const CATS={
+ stc:{re:/tribal|tribe|gond|bhil|warli|santhal|munda|oraon|korku|baiga|soliga|toda|irula|siddi|garasia|chenchu|bodo|mising|garo|karbi|khasi|apatani|konyak|angami|reang|bhutia|lepcha|dimasa|sarhul|nicobar|monpa|naga|ho /},
+ obc:['phulkari','kalamkari','ajrak','gopuram','konark','lucknow','mandu','marwari','garba','pashmina','warli','haryana'],
+ sc:['bengal river','kerala backwaters','goa konkani','rautnach','aipan'],
+ general:['pashmina','himachal','sikkim','ladakh','assam rhino','nicobar','baghelkhand','jaipur','srinagar','kerala','varanasi','mysore','kolkata','mumbai','bhuj','odisha'],
+ ews:['mandu','haryana','aipan','goa konkani','gond'],
+ creamy:['phulkari','kalamkari','ajrak','gopuram','konark','lucknow','mandu','marwari','garba','pashmina']
+};
+const CATNOTES={general:'General / अनारक्षित वर्ग — open to all citizens; shared regional & wildlife canvases.',obc:'OBC / अन्य पिछड़ी वर्ग — artisan & craft communities (bunkar, chhipa, temple shilpi). Museum curation.',sc:'SC / अनुसूचित जाति — dignity-of-labour themes, curated with respect.',stc:'ST / अनुसूचित जनजाति — 705 tribes ki kala, is museum ki dhadkan.',ews:'EWS — income-based category; everyday Bharat ke canvases.',creamy:'Creamy / Non-creamy layer — OBC ke andar income-aadhit vibhajan; informational curation.'};
+let shown=20,curList=[];
+function render(){
+  let q=document.getElementById('search').value.toLowerCase(),f=document.getElementById('filter').value;
+  if(f==='soon'){
+    const planned=GALLERY.filter(g=>Array.isArray(g)&&g[1].toLowerCase().includes(q));
+    document.getElementById('result').textContent=planned.length+' coming soon artworks';
+    document.getElementById('catNote').textContent='';
+    document.querySelectorAll('#catChips .chip').forEach(b=>b.classList.toggle('on',b.getAttribute('data-cat')===f));
+    document.getElementById('grid').innerHTML=planned.map(g=>{const num=GALLERY.indexOf(g)+1;let hit=null;for(const s of ARTSPEC){if(g[0].startsWith(s[0])){hit=s;break}}let spec,price;if(hit&&hit[0]!=='art_'){spec=hit[1];price=hit[2]}else{let h=0;for(let j=0;j<g[0].length;j++)h=(h*31+g[0].charCodeAt(j))>>>0;const fs=FOLKSPEC[h%3];spec=fs[0];price=fs[1]}return `<article class="card soon"><div class="pic"><img src="${g[0]}" loading="lazy" alt="${g[1]} artwork preview" onerror="this.classList.add('noimg')"><div class="ph"><b>#${String(num).padStart(3,'0')}</b>${g[1]}</div></div><div class="tag">Coming soon</div><div class="info"><h3>${g[1]}</h3><div class="meta">${spec}</div><div class="prices"><span class="sale">₹${price}</span><span class="mrp">₹${Math.round(price*1.25)}</span></div></div></article>`}).join('')||'<p class="empty">No coming soon matches.</p>';
+    document.getElementById('moreBtn').hidden=true;
+    return;
+  }
+  let list=products.filter(p=>{
+    let text=p.join(' ').toLowerCase();
+    let cat=f==='all'||p[4]===f||(CATS[f]&&(CATS[f].re?CATS[f].re.test(text):CATS[f].some(k=>text.includes(k))))||(f==='region'&&/kerala|jaipur|rajasthan|assam|bengal|punjab|goa|ladakh|kashmir|srinagar|varanasi|banaras|mumbai|kolkata|mysore|odisha|konark|gujarat|kutch|maharashtra|tamil|telangana|himachal|uttarakhand|sikkim|nicobar|malwa|baghelkhand|madhya|konkan|haryana|amritsar|mandu|bihar|nalanda|unakoti|gopuram|andaman|arunachal|naga|manipur|meghalaya|mizoram|tripura/.test(text))||(f==='craft'&&/folk|tribe|dhokra|gond|phulkari|kalamkari|madhubani|warli|pattachitra|ganjifa|saura|kavad|sikki|manjusha|nirmal|kondapalli|channapatna|cheriyal|phad|pichwai|ajrak|rogan|tikuli|zardozi|tholu|pachedi|basohli|thanjavur|miniature|chhau|theyyam|kathakali|yakshagana|odissi|kathak|lavani|bihu|dhamal|hojagiri|wangala|sarhul|sarna|gotul|godna|kolam|rangoli|paisley|loom|weaver|potter|dancer|musician|shepherd/.test(text))||(f==='nature'&&/tiger|leopard|rhino|bustard|dolphin|cobra|lion|peacock|camel|forest|himalaya|backwater|monsoon|dune|snow|deer|elephant|sangai|wild|river|mountain|lake|bird|hangul|dawn|cloud|grove|banyan|lotus|wave|valley|desert|thar/.test(text))||(f==='tribal'&&/tribal|tribe|gond|bhil|bastar|saura|santhal|munda|baiga|soliga|oraon|mising|bodo|karbi|gaddi|konyak|siddi|maria|reang|chenchu/.test(text))||(f==='language'&&/sanskrit|urdu|telugu|bengal|assam|punjab|madhya|konkani|dogri|mising|khasi/.test(text));
+    return cat&&text.includes(q)
+  });
+  curList=list;shown=20;
+  document.getElementById('result').textContent=list.length+' canvas artworks';
+  document.getElementById('catNote').textContent=CATNOTES[f]||'';
+  document.querySelectorAll('#catChips .chip').forEach(b=>b.classList.toggle('on',b.getAttribute('data-cat')===f));
+  drawList();
+}
+function drawList(){
+  document.getElementById('grid').innerHTML=curList.slice(0,shown).map(p=>`<article class="card"><div class="pic"><img src="${artFor(p)}" loading="lazy" alt="${p[0]} canvas artwork"><span class="cnum">#${String(GALLERY.indexOf(p[6])+1).padStart(3,'0')}</span></div><div class="tag">20% off</div><div class="info"><h3>${p[0]}</h3><div class="meta">${p[1]} · ${p[5]||'400 GSM UV canvas · CNC frame'}</div><div class="prices"><span class="sale">₹${p[2]}</span><span class="mrp">₹${p[3]}</span></div><details class="cmade"><summary>✂ CUSTOM MADE — apni size, frame & genuine quote</summary><div>Size 12×12 in se 10 ft tak · frame, colour & design aapki choice · free studio consultation + on-site recce ke baad genuine written quote · 100% handmade in Indore · pan-India safe delivery · Price = original print/cutting file; wall canvas final after recce · Modification +20% extra · WhatsApp: +91 90090 01551</div></details><button class="add" onclick="add(${products.indexOf(p)})">Add to bag</button></div></article>`).join('')||'<p class="empty">No stories found. Try another search.</p>';
+  const mb=document.getElementById('moreBtn');
+  if(curList.length>shown){mb.hidden=false;mb.textContent='More collection — '+(curList.length-shown)+' aur dekhein ↓'}else{mb.hidden=true}
+}
+function showMore(){shown+=20;drawList()}
+function pickCat(c){document.getElementById('filter').value=c;render()}
+function add(i){bag.push(products[i]);document.getElementById('count').textContent=bag.length;updateBag();toggleCart()}
+function updateBag(){document.getElementById('bag').innerHTML=bag.length?bag.map(p=>`<div class="item"><span>${p[0]}<br><small>₹${p[2]}</small></span><b>₹${p[2]}</b></div>`).join(''):'<p class="empty">Your bag is waiting for a good story.</p>';document.getElementById('total').textContent='₹'+bag.reduce((a,p)=>a+ +p[2],0)}
+function toggleCart(){document.getElementById('drawer').classList.toggle('open')}
+function focusSearch(){document.getElementById('search').focus();const s=document.getElementById('shop');if(s&&s.scrollIntoView)s.scrollIntoView()}
+
+/* ===== Interactive Bharat map: colour follows the cursor ===== */
+(function(){
+  const wrap=document.getElementById('mapHover');
+  let tx=0,ty=0,cx=0,cy=0,live=false,raf=null,hold=null;
+  const sizeRadius=()=>{const r=wrap.getBoundingClientRect();wrap.style.setProperty('--r',Math.max(110,Math.round(Math.min(r.width,r.height)*0.42))+'px')};
+  const setPoint=e=>{const r=wrap.getBoundingClientRect();tx=e.clientX-r.left;ty=e.clientY-r.top};
+  const step=()=>{cx+=(tx-cx)*.22;cy+=(ty-cy)*.22;wrap.style.setProperty('--mx',cx.toFixed(1)+'px');wrap.style.setProperty('--my',cy.toFixed(1)+'px');raf=requestAnimationFrame(step)};
+  const start=()=>{if(hold){clearTimeout(hold);hold=null}if(!live){live=true;wrap.classList.add('is-live');if(raf===null)raf=requestAnimationFrame(step)}};
+  const stop=()=>{live=false;wrap.classList.remove('is-live');if(raf!==null){cancelAnimationFrame(raf);raf=null}};
+  /* Desktop: mouse-follow reveal */
+  wrap.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){sizeRadius();setPoint(e);cx=tx;cy=ty;start()}});
+  wrap.addEventListener('pointermove',e=>{if(e.pointerType==='mouse'){setPoint(e);start()}});
+  wrap.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')stop()});
+  /* Touch fallback: tap / drag to reveal, colour fades after release */
+  wrap.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'){sizeRadius();setPoint(e);cx=tx;cy=ty;start()}});
+  wrap.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse')setPoint(e)});
+  wrap.addEventListener('pointerup',e=>{if(e.pointerType!=='mouse'){hold=setTimeout(stop,1100)}});
+  wrap.addEventListener('pointercancel',stop);
+  addEventListener('resize',sizeRadius);
+})();
+
+/* ===== living archive: 714 total · 196 live · 518 coming soon ===== */
+const GALLERY=["india_motif_hero.jpg", "art_acrylic_camel_dunes.jpg", "art_acrylic_kathak_dancer.jpg", "art_acrylic_sitar_player.jpg", "art_acrylic_snow_leopard.jpg", "art_ajrak_geometry.jpg", "art_backlit_madhubani_translite.jpg", "art_cnc_himalaya_ridge.jpg", "art_cnc_konark_spokes.jpg", "art_cnc_warli_dancers.jpg", "art_cnc_wave_backwater.jpg", "art_creative_diya_river.jpg", "art_creative_gully_cricket.jpg", "art_creative_madhubani_cosmos.jpg", "art_creative_train_window.jpg", "art_cutout_arch.jpg", "art_cutout_bharat.jpg", "art_cutout_hands.jpg", "art_cutout_tiger.jpg", "art_dhokra_tribal.jpg", "art_emboss_bamboo_grove.jpg", "art_emboss_cobra.jpg", "art_emboss_dolphin.jpg", "art_emboss_hawa_mahal.jpg", "art_emboss_lion.jpg", "art_emboss_lotus_temple.jpg", "art_emboss_rhino.jpg", "art_emboss_sangai.jpg", "art_emboss_stepwell.jpg", "art_gond_forest.jpg", "art_kalamkari.jpg", "art_laserlit_banyan.jpg", "art_laserlit_monastery.jpg", "art_neon_tube_kathakali.jpg", "art_neon_tube_lotus.jpg", "art_neon_tube_peacock.jpg", "art_neon_tube_taj.jpg", "art_neon_tube_umbrella.jpg", "art_phad_scroll.jpg", "art_phulkari.jpg", "art_pichwai_cow.jpg", "art_room_counter_spices.jpg", "art_room_dining_thali.jpg", "art_room_hallway_kutch.jpg", "art_room_veranda_boats.jpg", "art_tribal_dots.jpg", "art_wall_camelfair.jpg", "art_wall_dancer.jpg", "art_wall_fisherfolk.jpg", "art_wall_honeygather.jpg", "art_wall_musicians.jpg", "art_wall_paisley.jpg", "art_wall_potters.jpg", "art_wall_rangoli.jpg", "art_wall_shepherd.jpg", "art_wall_weavers.jpg", "art_wallpaper_assam.jpg", "art_wallpaper_bhuj.jpg", "art_wallpaper_jaipur.jpg", "art_wallpaper_kerala.jpg", "art_wallpaper_kolkata.jpg", "art_wallpaper_mumbai.jpg", "art_wallpaper_mysore.jpg", "art_wallpaper_odisha.jpg", "art_wallpaper_srinagar.jpg", "art_wallpaper_varanasi.jpg", "art_folk_gotul.jpg", "art_folk_rautnach.jpg", "art_folk_nalanda.jpg", "art_folk_kangra.jpg", "art_folk_ajrak.jpg", "art_folk_saura.jpg", "art_folk_sikkim.jpg", "art_folk_haryana.jpg", "art_folk_bagurumba.jpg", "art_folk_dhamal.jpg", "art_folk_jadopatia.jpg", "art_folk_konkan.jpg", "art_folk_sarna.jpg", "art_folk_ladakh.jpg", "art_folk_aipan.jpg", "art_folk_dimasa.jpg", "art_folk_dogra.jpg", "art_folk_baghelkhand.jpg", "art_folk_dhokra.jpg", "art_folk_cheraw.jpg", "art_folk_irula.jpg", "art_folk_nicobar.jpg", "art_folk_misingloom.jpg", "art_folk_konyak.jpg", "art_folk_hojagiri.jpg", "art_folk_soliga.jpg", "art_folk_toda.jpg", "art_folk_unakoti.jpg", "art_folk_gond.jpg", "art_folk_kalamkari.jpg", "art_folk_chenchu.jpg", "art_folk_monpa.jpg", "art_folk_jambili.jpg", "art_folk_godna.jpg", "art_folk_nongkrem.jpg", "art_folk_gujjar.jpg", "art_folk_rootbridge.jpg", "art_folk_garasia.jpg", "art_folk_phulkari.jpg", "art_folk_wangala.jpg", "art_folk_bhotiya.jpg", "art_folk_bhutia.jpg", "art_folk_lambani.jpg", "art_folk_apatani.jpg", "art_folk_bhil.jpg", "art_folk_sarhul.jpg", "art_folk_chhau.jpg", "art_folk_sangai.jpg", "art_folk_korku.jpg", "art_folk_mandu.jpg", "art_folk_lepcha.jpg", "art_folk_gopuram.jpg", "art_folk_madhubani.jpg", "art_folk_gaddi.jpg", "art_folk_hornbill.jpg", "art_folk_warli.jpg", "art_folk_pattachitra.jpg", "art_folk_thanjavur.jpg", "art_folk_miniature.jpg", "art_folk_cheriyal.jpg", "art_folk_baul.jpg", "art_folk_theyyam.jpg", "art_folk_bihu.jpg", "art_folk_lavani.jpg", "art_folk_kathakali.jpg", "art_folk_yakshagana.jpg", "art_folk_ravanhatta.jpg", "art_folk_odissi.jpg", "art_folk_kathak.jpg", "art_folk_pakhwaj.jpg", "art_folk_sohrai.jpg", "art_folk_manjusha.jpg", "art_folk_nirmal.jpg", "art_folk_kondapalli.jpg", "art_folk_channapatna.jpg", "art_folk_sikki.jpg", "art_folk_kavad.jpg", "art_folk_ganjifa.jpg", "art_folk_bishnoi.jpg", "art_folk_koli.jpg", "art_uv_holi.jpg", "art_uv_monsoon.jpg", "art_uv_spices.jpg", "art_uv_marigold.jpg", "art_uv_himalaya.jpg", "art_uv_backwater.jpg", "art_uv_peacock.jpg", "art_uv_banaras.jpg", "art_uv_thar.jpg", "art_uv_tiger.jpg", "art_min_himachal.jpg", "art_min_uttarakhand.jpg", "art_min_punjab.jpg", "art_min_tamil.jpg", "art_min_ladakh.jpg", "art_min_goa.jpg", "art_min_sikkim.jpg", "art_min_nicobar.jpg", "art_min_malwa.jpg", "art_min_baghelkhand.jpg", "art_min_kerala.jpg", "art_min_kashmir.jpg", "art_min_rajasthan.jpg", "art_min_bengal.jpg", "art_min_assam.jpg", "art_min_gujarat.jpg", "art_min_maharashtra.jpg", "art_min_telangana.jpg", "art_min_odisha.jpg", "art_min_madhya.jpg", "art_gold_jali_ganesha.jpg", "art_silver_tarakasi_chariot.jpg", "art_silver_ganga_aarti_thali.jpg", "art_silver_rajwadi_urn.jpg", "art_silver_peacock_pair.jpg", "art_silver_nandi.jpg", "art_silver_kolhapuri_saaj.jpg", "art_gem_navratna_mandala.jpg", "art_gem_kundan_peacock.jpg", ["art_tribe_great_andamanese.jpg", "Great Andamanese (Andaman & Nicobar)"], ["art_tribe_onge.jpg", "Onge (Andaman & Nicobar)"], ["art_tribe_jarawa.jpg", "Jarawa (Andaman & Nicobar)"], ["art_tribe_sentinelese.jpg", "Sentinelese (Andaman & Nicobar)"], ["art_tribe_shompen.jpg", "Shompen (Andaman & Nicobar)"], ["art_tribe_nicobarese.jpg", "Nicobarese (Andaman & Nicobar)"], ["art_tribe_nyishi.jpg", "Nyishi (Arunachal Pradesh)"], ["art_tribe_adi.jpg", "Adi (Arunachal Pradesh)"], ["art_tribe_galo.jpg", "Galo (Arunachal Pradesh)"], ["art_tribe_apatani.jpg", "Apatani (Arunachal Pradesh)"], ["art_tribe_tagin.jpg", "Tagin (Arunachal Pradesh)"], ["art_tribe_idu_mishmi.jpg", "Idu Mishmi (Arunachal Pradesh)"], ["art_tribe_miju_mishmi.jpg", "Miju Mishmi (Arunachal Pradesh)"], ["art_tribe_digaru_mishmi.jpg", "Digaru Mishmi (Arunachal Pradesh)"], ["art_tribe_khampti.jpg", "Khampti (Arunachal Pradesh)"], ["art_tribe_singpho.jpg", "Singpho (Arunachal Pradesh)"], ["art_tribe_nocte.jpg", "Nocte (Arunachal Pradesh)"], ["art_tribe_wancho.jpg", "Wancho (Arunachal Pradesh)"], ["art_tribe_tangsa.jpg", "Tangsa (Arunachal Pradesh)"], ["art_tribe_tutsa.jpg", "Tutsa (Arunachal Pradesh)"], ["art_tribe_bugun.jpg", "Bugun (Arunachal Pradesh)"], ["art_tribe_puroik_sulung.jpg", "Puroik (Sulung) (Arunachal Pradesh)"], ["art_tribe_khowa.jpg", "Khowa (Arunachal Pradesh)"], ["art_tribe_miji.jpg", "Miji (Arunachal Pradesh)"], ["art_tribe_sherdukpen.jpg", "Sherdukpen (Arunachal Pradesh)"], ["art_tribe_bangru_aka.jpg", "Bangru (Aka) (Arunachal Pradesh)"], ["art_tribe_milang.jpg", "Milang (Arunachal Pradesh)"], ["art_tribe_memba.jpg", "Memba (Arunachal Pradesh)"], ["art_tribe_zakhring.jpg", "Zakhring (Arunachal Pradesh)"], ["art_tribe_kaman_meyor.jpg", "Kaman (Meyor) (Arunachal Pradesh)"], ["art_tribe_lisu_yobin.jpg", "Lisu (Yobin) (Arunachal Pradesh)"], ["art_tribe_padam.jpg", "Padam (Arunachal Pradesh)"], ["art_tribe_minyong.jpg", "Minyong (Arunachal Pradesh)"], ["art_tribe_boker.jpg", "Boker (Arunachal Pradesh)"], ["art_tribe_pasi.jpg", "Pasi (Arunachal Pradesh)"], ["art_tribe_shimong.jpg", "Shimong (Arunachal Pradesh)"], ["art_tribe_karko.jpg", "Karko (Arunachal Pradesh)"], ["art_tribe_bori.jpg", "Bori (Arunachal Pradesh)"], ["art_tribe_angami.jpg", "Angami (Nagaland)"], ["art_tribe_ao.jpg", "Ao (Nagaland)"], ["art_tribe_sumi.jpg", "Sumi (Nagaland)"], ["art_tribe_lotha.jpg", "Lotha (Nagaland)"], ["art_tribe_rengma.jpg", "Rengma (Nagaland)"], ["art_tribe_konyak.jpg", "Konyak (Nagaland)"], ["art_tribe_chang.jpg", "Chang (Nagaland)"], ["art_tribe_sangtam.jpg", "Sangtam (Nagaland)"], ["art_tribe_yimkhiung.jpg", "Yimkhiung (Nagaland)"], ["art_tribe_khiamniungan.jpg", "Khiamniungan (Nagaland)"], ["art_tribe_tikhir.jpg", "Tikhir (Nagaland)"], ["art_tribe_zeme.jpg", "Zeme (Nagaland)"], ["art_tribe_liangmai.jpg", "Liangmai (Nagaland)"], ["art_tribe_rongmei.jpg", "Rongmei (Nagaland)"], ["art_tribe_poumai.jpg", "Poumai (Nagaland)"], ["art_tribe_maram.jpg", "Maram (Nagaland)"], ["art_tribe_mao.jpg", "Mao (Nagaland)"], ["art_tribe_paomata.jpg", "Paomata (Nagaland)"], ["art_tribe_chakhesang.jpg", "Chakhesang (Nagaland)"], ["art_tribe_phom.jpg", "Phom (Nagaland)"], ["art_tribe_thangal.jpg", "Thangal (Nagaland)"], ["art_tribe_inpui.jpg", "Inpui (Nagaland)"], ["art_tribe_tangkhul.jpg", "Tangkhul (Manipur)"], ["art_tribe_thadou.jpg", "Thadou (Manipur)"], ["art_tribe_hmar.jpg", "Hmar (Manipur)"], ["art_tribe_paite.jpg", "Paite (Manipur)"], ["art_tribe_vaiphei.jpg", "Vaiphei (Manipur)"], ["art_tribe_kom.jpg", "Kom (Manipur)"], ["art_tribe_aimol.jpg", "Aimol (Manipur)"], ["art_tribe_anal.jpg", "Anal (Manipur)"], ["art_tribe_maring.jpg", "Maring (Manipur)"], ["art_tribe_monsang.jpg", "Monsang (Manipur)"], ["art_tribe_moyon.jpg", "Moyon (Manipur)"], ["art_tribe_tarao.jpg", "Tarao (Manipur)"], ["art_tribe_chiru.jpg", "Chiru (Manipur)"], ["art_tribe_purum.jpg", "Purum (Manipur)"], ["art_tribe_koireng.jpg", "Koireng (Manipur)"], ["art_tribe_lamkang.jpg", "Lamkang (Manipur)"], ["art_tribe_zou.jpg", "Zou (Manipur)"], ["art_tribe_gangte.jpg", "Gangte (Manipur)"], ["art_tribe_simte.jpg", "Simte (Manipur)"], ["art_tribe_ralte.jpg", "Ralte (Manipur)"], ["art_tribe_kabui.jpg", "Kabui (Manipur)"], ["art_tribe_khoibu.jpg", "Khoibu (Manipur)"], ["art_tribe_chothe.jpg", "Chothe (Manipur)"], ["art_tribe_kharam.jpg", "Kharam (Manipur)"], ["art_tribe_khasi.jpg", "Khasi (Meghalaya)"], ["art_tribe_pnar_jaintia.jpg", "Pnar (Jaintia) (Meghalaya)"], ["art_tribe_garo.jpg", "Garo (Meghalaya)"], ["art_tribe_war.jpg", "War (Meghalaya)"], ["art_tribe_bhoi.jpg", "Bhoi (Meghalaya)"], ["art_tribe_lyngngam.jpg", "Lyngngam (Meghalaya)"], ["art_tribe_tripuri.jpg", "Tripuri (Tripura)"], ["art_tribe_reang_bru.jpg", "Reang (Bru) (Tripura)"], ["art_tribe_jamatia.jpg", "Jamatia (Tripura)"], ["art_tribe_noatia.jpg", "Noatia (Tripura)"], ["art_tribe_halam.jpg", "Halam (Tripura)"], ["art_tribe_uchai.jpg", "Uchai (Tripura)"], ["art_tribe_darlong.jpg", "Darlong (Tripura)"], ["art_tribe_mizo.jpg", "Mizo (Mizoram)"], ["art_tribe_mara_lakher.jpg", "Mara (Lakher) (Mizoram)"], ["art_tribe_chakma.jpg", "Chakma (Mizoram)"], ["art_tribe_bodo.jpg", "Bodo (Assam)"], ["art_tribe_mishing.jpg", "Mishing (Assam)"], ["art_tribe_karbi.jpg", "Karbi (Assam)"], ["art_tribe_rabha.jpg", "Rabha (Assam)"], ["art_tribe_tiwa.jpg", "Tiwa (Assam)"], ["art_tribe_deori.jpg", "Deori (Assam)"], ["art_tribe_sonowal_kachari.jpg", "Sonowal Kachari (Assam)"], ["art_tribe_thengal_kachari.jpg", "Thengal Kachari (Assam)"], ["art_tribe_dimasa.jpg", "Dimasa (Assam)"], ["art_tribe_moran.jpg", "Moran (Assam)"], ["art_tribe_tai_ahom.jpg", "Tai Ahom (Assam)"], ["art_tribe_tai_phake.jpg", "Tai Phake (Assam)"], ["art_tribe_tai_turung.jpg", "Tai Turung (Assam)"], ["art_tribe_tai_aiton.jpg", "Tai Aiton (Assam)"], ["art_tribe_tai_khamyang.jpg", "Tai Khamyang (Assam)"], ["art_tribe_hajong.jpg", "Hajong (Assam)"], ["art_tribe_lepcha.jpg", "Lepcha (Sikkim)"], ["art_tribe_bhutia.jpg", "Bhutia (Sikkim)"], ["art_tribe_limboo.jpg", "Limboo (Sikkim)"], ["art_tribe_tamang.jpg", "Tamang (Sikkim)"], ["art_tribe_bhumij.jpg", "Bhumij (West Bengal)"], ["art_tribe_kora.jpg", "Kora (West Bengal)"], ["art_tribe_lodha.jpg", "Lodha (West Bengal)"], ["art_tribe_mahali.jpg", "Mahali (West Bengal)"], ["art_tribe_toto.jpg", "Toto (West Bengal)"], ["art_tribe_santhal.jpg", "Santhal (Jharkhand)"], ["art_tribe_munda.jpg", "Munda (Jharkhand)"], ["art_tribe_ho.jpg", "Ho (Jharkhand)"], ["art_tribe_oraon_kurukh.jpg", "Oraon (Kurukh) (Jharkhand)"], ["art_tribe_kharia.jpg", "Kharia (Jharkhand)"], ["art_tribe_asur.jpg", "Asur (Jharkhand)"], ["art_tribe_birhor.jpg", "Birhor (Jharkhand)"], ["art_tribe_sauria_paharia.jpg", "Sauria Paharia (Jharkhand)"], ["art_tribe_mal_paharia.jpg", "Mal Paharia (Jharkhand)"], ["art_tribe_korwa.jpg", "Korwa (Jharkhand)"], ["art_tribe_chero.jpg", "Chero (Jharkhand)"], ["art_tribe_bediya.jpg", "Bediya (Jharkhand)"], ["art_tribe_parhaiya.jpg", "Parhaiya (Jharkhand)"], ["art_tribe_chik_baraik.jpg", "Chik Baraik (Jharkhand)"], ["art_tribe_gorait.jpg", "Gorait (Jharkhand)"], ["art_tribe_turi.jpg", "Turi (Jharkhand)"], ["art_tribe_kandha_khond.jpg", "Kandha (Khond) (Odisha)"], ["art_tribe_dongria_kondh.jpg", "Dongria Kondh (Odisha)"], ["art_tribe_kutia_kondh.jpg", "Kutia Kondh (Odisha)"], ["art_tribe_bondo.jpg", "Bondo (Odisha)"], ["art_tribe_paraja.jpg", "Paraja (Odisha)"], ["art_tribe_gadaba.jpg", "Gadaba (Odisha)"], ["art_tribe_dhurua.jpg", "Dhurua (Odisha)"], ["art_tribe_didayi.jpg", "Didayi (Odisha)"], ["art_tribe_koya.jpg", "Koya (Odisha)"], ["art_tribe_juang.jpg", "Juang (Odisha)"], ["art_tribe_saura.jpg", "Saura (Odisha)"], ["art_tribe_bhatra.jpg", "Bhatra (Odisha)"], ["art_tribe_kolha.jpg", "Kolha (Odisha)"], ["art_tribe_matia.jpg", "Matia (Odisha)"], ["art_tribe_baiga.jpg", "Baiga (Chhattisgarh)"], ["art_tribe_kamar.jpg", "Kamar (Chhattisgarh)"], ["art_tribe_kanwar.jpg", "Kanwar (Chhattisgarh)"], ["art_tribe_halba.jpg", "Halba (Chhattisgarh)"], ["art_tribe_dhruwa.jpg", "Dhruwa (Chhattisgarh)"], ["art_tribe_gond.jpg", "Gond (Madhya Pradesh)"], ["art_tribe_bhil.jpg", "Bhil (Madhya Pradesh)"], ["art_tribe_bhilala.jpg", "Bhilala (Madhya Pradesh)"], ["art_tribe_barela.jpg", "Barela (Madhya Pradesh)"], ["art_tribe_patelia.jpg", "Patelia (Madhya Pradesh)"], ["art_tribe_korku.jpg", "Korku (Madhya Pradesh)"], ["art_tribe_sahariya.jpg", "Sahariya (Madhya Pradesh)"], ["art_tribe_kol.jpg", "Kol (Madhya Pradesh)"], ["art_tribe_bharia.jpg", "Bharia (Madhya Pradesh)"], ["art_tribe_nihali.jpg", "Nihali (Madhya Pradesh)"], ["art_tribe_pardhan.jpg", "Pardhan (Madhya Pradesh)"], ["art_tribe_agariya.jpg", "Agariya (Madhya Pradesh)"], ["art_tribe_bhunjia.jpg", "Bhunjia (Madhya Pradesh)"], ["art_tribe_pawra.jpg", "Pawra (Madhya Pradesh)"], ["art_tribe_rajgond.jpg", "Rajgond (Madhya Pradesh)"], ["art_tribe_dhur_gond.jpg", "Dhur Gond (Madhya Pradesh)"], ["art_tribe_muria.jpg", "Muria (Madhya Pradesh)"], ["art_tribe_madiya.jpg", "Madiya (Madhya Pradesh)"], "art_tribe_rathwa.jpg", ["art_tribe_naikda.jpg", "Naikda (Gujarat)"], ["art_tribe_chodhara.jpg", "Chodhara (Gujarat)"], ["art_tribe_dhodia.jpg", "Dhodia (Gujarat)"], ["art_tribe_gamit.jpg", "Gamit (Gujarat)"], ["art_tribe_dubla.jpg", "Dubla (Gujarat)"], ["art_tribe_halpati.jpg", "Halpati (Gujarat)"], ["art_tribe_kotwalia.jpg", "Kotwalia (Gujarat)"], ["art_tribe_barda.jpg", "Barda (Gujarat)"], ["art_tribe_siddi.jpg", "Siddi (Gujarat)"], ["art_tribe_vaghri.jpg", "Vaghri (Gujarat)"], ["art_tribe_vasava.jpg", "Vasava (Gujarat)"], ["art_tribe_tadvi.jpg", "Tadvi (Gujarat)"], ["art_tribe_talavia.jpg", "Talavia (Gujarat)"], ["art_tribe_dhanka.jpg", "Dhanka (Gujarat)"], ["art_tribe_mina_meena.jpg", "Mina (Meena) (Rajasthan)"], ["art_tribe_kathodi.jpg", "Kathodi (Rajasthan)"], ["art_tribe_garasia.jpg", "Garasia (Rajasthan)"], ["art_tribe_damor.jpg", "Damor (Rajasthan)"], ["art_tribe_sansi_sansiya.jpg", "Sansi (Sansiya) (Rajasthan)"], ["art_tribe_kalbelia.jpg", "Kalbelia (Rajasthan)"], ["art_tribe_warli.jpg", "Warli (Maharashtra)"], ["art_tribe_katkari.jpg", "Katkari (Maharashtra)"], ["art_tribe_koli_mahadev.jpg", "Koli Mahadev (Maharashtra)"], ["art_tribe_thakur.jpg", "Thakur (Maharashtra)"], ["art_tribe_pardhi.jpg", "Pardhi (Maharashtra)"], ["art_tribe_kokna.jpg", "Kokna (Maharashtra)"], ["art_tribe_kaikadi.jpg", "Kaikadi (Maharashtra)"], ["art_tribe_gaddi.jpg", "Gaddi (Himachal Pradesh)"], ["art_tribe_kinnaura.jpg", "Kinnaura (Himachal Pradesh)"], ["art_tribe_lahaula.jpg", "Lahaula (Himachal Pradesh)"], ["art_tribe_swangla.jpg", "Swangla (Himachal Pradesh)"], ["art_tribe_pangwala.jpg", "Pangwala (Himachal Pradesh)"], ["art_tribe_hatti.jpg", "Hatti (Himachal Pradesh)"], ["art_tribe_gujjar_bakarwal.jpg", "Gujjar-Bakarwal (Himachal Pradesh)"], ["art_tribe_tharu.jpg", "Tharu (Uttarakhand)"], ["art_tribe_raji.jpg", "Raji (Uttarakhand)"], ["art_tribe_buksa.jpg", "Buksa (Uttarakhand)"], ["art_tribe_chenchu.jpg", "Chenchu (Andhra Pradesh & Telangana)"], ["art_tribe_konda_reddi.jpg", "Konda Reddi (Andhra Pradesh & Telangana)"], ["art_tribe_konda_savara.jpg", "Konda Savara (Andhra Pradesh & Telangana)"], ["art_tribe_kolam.jpg", "Kolam (Andhra Pradesh & Telangana)"], ["art_tribe_naikpod.jpg", "Naikpod (Andhra Pradesh & Telangana)"], ["art_tribe_thoti.jpg", "Thoti (Andhra Pradesh & Telangana)"], ["art_tribe_andh.jpg", "Andh (Andhra Pradesh & Telangana)"], ["art_tribe_valmiki.jpg", "Valmiki (Andhra Pradesh & Telangana)"], ["art_tribe_yerukala.jpg", "Yerukala (Andhra Pradesh & Telangana)"], ["art_tribe_bagata.jpg", "Bagata (Andhra Pradesh & Telangana)"], ["art_tribe_jatapu.jpg", "Jatapu (Andhra Pradesh & Telangana)"], ["art_tribe_koya_godavari.jpg", "Koya (Godavari) (Andhra Pradesh & Telangana)"], ["art_tribe_soliga.jpg", "Soliga (Karnataka)"], ["art_tribe_jenu_kuruba.jpg", "Jenu Kuruba (Karnataka)"], ["art_tribe_hakki_pikki.jpg", "Hakki Pikki (Karnataka)"], ["art_tribe_koraga.jpg", "Koraga (Karnataka)"], ["art_tribe_kadu_kuruba.jpg", "Kadu Kuruba (Karnataka)"], ["art_tribe_betta_kuruba.jpg", "Betta Kuruba (Karnataka)"], ["art_tribe_naika.jpg", "Naika (Karnataka)"], ["art_tribe_irula.jpg", "Irula (Kerala)"], ["art_tribe_paniyan.jpg", "Paniyan (Kerala)"], ["art_tribe_kurichiya.jpg", "Kurichiya (Kerala)"], ["art_tribe_kattunayakan.jpg", "Kattunayakan (Kerala)"], ["art_tribe_cholanaikkan.jpg", "Cholanaikkan (Kerala)"], ["art_tribe_malapandaram.jpg", "Malapandaram (Kerala)"], ["art_tribe_mala_arayan.jpg", "Mala Arayan (Kerala)"], ["art_tribe_kani_kanikaran.jpg", "Kani (Kanikaran) (Kerala)"], ["art_tribe_malavedan.jpg", "Malavedan (Kerala)"], ["art_tribe_urali.jpg", "Urali (Kerala)"], ["art_tribe_mannan.jpg", "Mannan (Kerala)"], ["art_tribe_muthuvan.jpg", "Muthuvan (Kerala)"], ["art_tribe_mullu_kurumba.jpg", "Mullu Kurumba (Kerala)"], ["art_tribe_mala_pantaram.jpg", "Mala Pantaram (Kerala)"], ["art_tribe_eravallan.jpg", "Eravallan (Kerala)"], ["art_tribe_malayan.jpg", "Malayan (Kerala)"], ["art_tribe_aranadan.jpg", "Aranadan (Kerala)"], ["art_tribe_kadar.jpg", "Kadar (Kerala)"], ["art_tribe_malasar.jpg", "Malasar (Kerala)"], ["art_tribe_mudugar.jpg", "Mudugar (Kerala)"], ["art_tribe_toda.jpg", "Toda (Tamil Nadu)"], ["art_tribe_kota.jpg", "Kota (Tamil Nadu)"], ["art_wallpaper_udaipur_palaces.jpg", "Udaipur Palaces"], ["art_wallpaper_jodhpur_blue_city.jpg", "Jodhpur Blue City"], ["art_wallpaper_jaisalmer_golden_fort.jpg", "Jaisalmer Golden Fort"], ["art_wallpaper_bundi_murals.jpg", "Bundi Murals"], ["art_wallpaper_pushkar_lake_town.jpg", "Pushkar Lake Town"], ["art_wallpaper_bikaner_havelis.jpg", "Bikaner Havelis"], ["art_wallpaper_puri_temple_town.jpg", "Puri Temple Town"], ["art_wallpaper_bhubaneswar_temples.jpg", "Bhubaneswar Temples"], ["art_wallpaper_leh_monastery_valley.jpg", "Leh Monastery Valley"], "art_wallpaper_amritsar_golden_pool.jpg", ["art_wallpaper_shimla_cedar_hills.jpg", "Shimla Cedar Hills"], ["art_wallpaper_darjeeling_tea_hills.jpg", "Darjeeling Tea Hills"], ["art_wallpaper_gangtok_mountain_gates.jpg", "Gangtok Mountain Gates"], ["art_wallpaper_shillong_pine_city.jpg", "Shillong Pine City"], ["art_wallpaper_aizawl_hill_town.jpg", "Aizawl Hill Town"], ["art_wallpaper_kohima_hill_terraces.jpg", "Kohima Hill Terraces"], ["art_wallpaper_imphal_valley_blooms.jpg", "Imphal Valley Blooms"], ["art_wallpaper_guwahati_river_city.jpg", "Guwahati River City"], ["art_wallpaper_pondicherry_french_quarter.jpg", "Pondicherry French Quarter"], ["art_wallpaper_thanjavur_big_temple.jpg", "Thanjavur Big Temple"], ["art_wallpaper_madurai_temple_city.jpg", "Madurai Temple City"], ["art_wallpaper_chettinad_mansions.jpg", "Chettinad Mansions"], ["art_wallpaper_hampi_boulder_city.jpg", "Hampi Boulder City"], ["art_wallpaper_badami_cave_town.jpg", "Badami Cave Town"], ["art_wallpaper_bijapur_domes.jpg", "Bijapur Domes"], ["art_wallpaper_warangal_gate_city.jpg", "Warangal Gate City"], ["art_wallpaper_khajuraho_sculptures.jpg", "Khajuraho Sculptures"], ["art_wallpaper_orchha_riverside_forts.jpg", "Orchha Riverside Forts"], ["art_wallpaper_chanderi_weaver_town.jpg", "Chanderi Weaver Town"], ["art_wallpaper_maheshwar_ghats.jpg", "Maheshwar Ghats"], ["art_wallpaper_mandu_lake_palace.jpg", "Mandu Lake Palace"], ["art_wall_bharatanatyam_dancer.jpg", "Bharatanatyam Dancer"], ["art_wall_kathak_spin.jpg", "Kathak Spin"], ["art_wall_odissi_tribhanga.jpg", "Odissi Tribhanga"], ["art_wall_kuchipudi_dance.jpg", "Kuchipudi Dance"], ["art_wall_manipuri_dance.jpg", "Manipuri Dance"], ["art_wall_mohiniyattam_pose.jpg", "Mohiniyattam Pose"], ["art_wall_sattriya_dance.jpg", "Sattriya Dance"], ["art_wall_bhangra_drummers.jpg", "Bhangra Drummers"], ["art_wall_giddha_circle.jpg", "Giddha Circle"], ["art_wall_ghoomar_swirl.jpg", "Ghoomar Swirl"], ["art_wall_kalbelia_dance.jpg", "Kalbelia Dance"], ["art_wall_chhau_mask_dance.jpg", "Chhau Mask Dance"], ["art_wall_theyyam_ritual.jpg", "Theyyam Ritual"], ["art_wall_yakshagana_stage.jpg", "Yakshagana Stage"], ["art_wall_dandiya_night.jpg", "Dandiya Night"], ["art_wall_lavani_dancer.jpg", "Lavani Dancer"], ["art_wall_bihu_dance.jpg", "Bihu Dance"], ["art_wall_pongal_harvest.jpg", "Pongal Harvest"], ["art_wall_onam_pookalam.jpg", "Onam Pookalam"], ["art_wall_holi_colour_splash.jpg", "Holi Colour Splash"], ["art_wall_diwali_lamp_rows.jpg", "Diwali Lamp Rows"], ["art_wall_chand_raat_lanterns.jpg", "Chand Raat Lanterns"], ["art_wall_baisakhi_wheat_fields.jpg", "Baisakhi Wheat Fields"], ["art_wall_lohri_bonfire.jpg", "Lohri Bonfire"], ["art_wall_makar_sankranti_kites_free_sky.jpg", "Makar Sankranti Kites-Free Sky"], ["art_wall_ugadi_neem_jaggery.jpg", "Ugadi Neem-Jaggery"], ["art_wall_chhath_river_offering.jpg", "Chhath River Offering"], ["art_wall_teej_swings.jpg", "Teej Swings"], ["art_wall_block_printing_craft.jpg", "Block Printing Craft"], ["art_wall_blue_pottery_craft.jpg", "Blue Pottery Craft"], ["art_folk_cheriyal_scroll_painting.jpg", "Cheriyal Scroll Painting"], "art_folk_tholu_bommalata_shadow_puppets.jpg", "art_folk_rogan_cloth_art.jpg", ["art_folk_sanjhi_paper_cut.jpg", "Sanjhi Paper Cut"], "art_folk_mata_ni_pachedi_cloth.jpg", "art_folk_tikuli_lac_art.jpg", ["art_folk_sujani_quilt_embroidery.jpg", "Sujani Quilt Embroidery"], ["art_folk_sikki_grass_craft.jpg", "Sikki Grass Craft"], ["art_folk_manjusha_painting.jpg", "Manjusha Painting"], ["art_folk_nirmal_painting.jpg", "Nirmal Painting"], ["art_folk_pembarthi_brass_sheet_art.jpg", "Pembarthi Brass Sheet Art"], ["art_folk_kondapalli_wooden_toys.jpg", "Kondapalli Wooden Toys"], ["art_folk_etikoppaka_lacquer_toys.jpg", "Etikoppaka Lacquer Toys"], ["art_folk_channapatna_wooden_toys.jpg", "Channapatna Wooden Toys"], ["art_folk_sawantwadi_lacquer_craft.jpg", "Sawantwadi Lacquer Craft"], "art_folk_thanjavur_gold_leaf_painting.jpg", ["art_folk_mysore_palace_painting.jpg", "Mysore Palace Painting"], ["art_folk_kangra_pahari_painting.jpg", "Kangra Pahari Painting"], "art_folk_basohli_painting.jpg", ["art_folk_rajput_court_miniature.jpg", "Rajput Court Miniature"], ["art_folk_deccan_miniature_painting.jpg", "Deccan Miniature Painting"], ["art_wild_kashmir_hangul_deer.jpg", "Kashmir Hangul Deer"], ["art_wild_gaur_bison.jpg", "Gaur Bison"], ["art_wild_swamp_deer_barasingha.jpg", "Swamp Deer Barasingha"], ["art_wild_blackbuck_herd.jpg", "Blackbuck Herd"], ["art_wild_chinkara.jpg", "Chinkara"], ["art_wild_sloth_bear.jpg", "Sloth Bear"], ["art_wild_indian_pangolin.jpg", "Indian Pangolin"], ["art_wild_gharial.jpg", "Gharial"], ["art_wild_olive_ridley_turtle.jpg", "Olive Ridley Turtle"], ["art_wild_hoolock_gibbon.jpg", "Hoolock Gibbon"], ["art_wild_great_hornbill.jpg", "Great Hornbill"], ["art_wild_sarus_crane_pair.jpg", "Sarus Crane Pair"], ["art_wild_flamingo_flock.jpg", "Flamingo Flock"], "art_wild_great_indian_bustard.jpg", ["art_wild_nilgiri_tahr.jpg", "Nilgiri Tahr"], ["art_wild_lion_tailed_macaque.jpg", "Lion-Tailed Macaque"], ["art_wild_purple_frog.jpg", "Purple Frog"], ["art_wild_four_horned_antelope.jpg", "Four-Horned Antelope"], ["art_wild_mouse_deer.jpg", "Mouse Deer"], ["art_wild_clouded_leopard.jpg", "Clouded Leopard"], ["art_wild_red_panda.jpg", "Red Panda"], ["art_wild_slow_loris.jpg", "Slow Loris"], ["art_wild_dugong.jpg", "Dugong"], ["art_wild_pygmy_hog.jpg", "Pygmy Hog"], ["art_wild_nilgiri_marten.jpg", "Nilgiri Marten"], ["art_wild_nicobar_pigeon.jpg", "Nicobar Pigeon"], ["art_wild_black_necked_crane.jpg", "Black-Necked Crane"], ["art_wild_painted_stork.jpg", "Painted Stork"], ["art_wild_spot_billed_pelican.jpg", "Spot-Billed Pelican"], ["art_wild_indian_skimmer.jpg", "Indian Skimmer"], ["art_tribelife_longhouse_drum_night.jpg", "Longhouse Drum Night"], ["art_tribelife_terrace_millet_harvest.jpg", "Terrace Millet Harvest"], ["art_tribelife_bamboo_loom_weaving.jpg", "Bamboo Loom Weaving"], ["art_tribelife_river_fish_weir.jpg", "River Fish Weir"], "art_tribelife_weekly_haat_market.jpg", ["art_tribelife_forest_resin_tapping.jpg", "Forest Resin Tapping"], ["art_tribelife_iron_bloom_smelting.jpg", "Iron Bloom Smelting"], ["art_tribelife_jhum_hill_sowing.jpg", "Jhum Hill Sowing"], ["art_tribelife_log_drum_festival.jpg", "Log-Drum Festival"], ["art_tribelife_sacred_grove_gathering.jpg", "Sacred Grove Gathering"], ["art_tribelife_ancestor_stone_memorials.jpg", "Ancestor Stone Memorials"], ["art_tribelife_mask_carving_workshop.jpg", "Mask Carving Workshop"], ["art_tribelife_dugout_boat_making.jpg", "Dugout Boat Making"], ["art_tribelife_hill_market_trek.jpg", "Hill Market Trek"], ["art_tribelife_fire_circle_dance.jpg", "Fire-Circle Dance"], ["art_tribelife_clay_granary_making.jpg", "Clay Granary Making"], ["art_tribelife_monsoon_sowing_songs.jpg", "Monsoon Sowing Songs"], ["art_tribelife_harvest_feast.jpg", "Harvest Feast"], ["art_tribelife_village_wrestling_akhara.jpg", "Village Wrestling Akhara"], ["art_tribelife_tattoo_artisan_at_work.jpg", "Tattoo Artisan At Work"], ["art_neon_sitar.jpg", "Sitar"], ["art_neon_tabla_pair.jpg", "Tabla Pair"], ["art_neon_bangle_stack.jpg", "Bangle Stack"], ["art_neon_marigold_garland.jpg", "Marigold Garland"], ["art_neon_brass_diya.jpg", "Brass Diya"], ["art_neon_conch_shell.jpg", "Conch Shell"], ["art_neon_peacock_feather.jpg", "Peacock Feather"], ["art_neon_temple_gopuram.jpg", "Temple Gopuram"], ["art_neon_lotus_pond.jpg", "Lotus Pond"], ["art_neon_classical_dancer.jpg", "Classical Dancer"], ["art_neon_dholak_drum.jpg", "Dholak Drum"], ["art_neon_veena.jpg", "Veena"], ["art_neon_tanpura.jpg", "Tanpura"], ["art_neon_ghungroo_anklet.jpg", "Ghungroo Anklet"], ["art_neon_morchhal_fan.jpg", "Morchhal Fan"], ["art_neon_jhula_swing.jpg", "Jhula Swing"], ["art_neon_bullock_cart.jpg", "Bullock Cart"], ["art_neon_fishing_sail.jpg", "Fishing Sail"], ["art_cnc_jaali_jharokha.jpg", "Jaali Jharokha"], ["art_cnc_temple_doorway.jpg", "Temple Doorway"], ["art_cnc_banyan_roots.jpg", "Banyan Roots"], ["art_cnc_lotus_mandala.jpg", "Lotus Mandala"], ["art_cnc_paisley_vine.jpg", "Paisley Vine"], ["art_cnc_peacock_arch.jpg", "Peacock Arch"], ["art_cnc_sunburst_rays.jpg", "Sunburst Rays"], ["art_cnc_monsoon_clouds.jpg", "Monsoon Clouds"], ["art_cnc_conch_spiral.jpg", "Conch Spiral"], ["art_cnc_bangle_circles.jpg", "Bangle Circles"], ["art_cnc_mehndi_lace.jpg", "Mehndi Lace"], ["art_cnc_kolam_dots.jpg", "Kolam Dots"], ["art_cnc_river_bend.jpg", "River Bend"], ["art_cnc_mountain_layers.jpg", "Mountain Layers"], ["art_cnc_forest_canopy.jpg", "Forest Canopy"], ["art_cnc_bird_flock.jpg", "Bird Flock"], ["art_cnc_toran_arch.jpg", "Toran Arch"], ["art_cnc_temple_bell.jpg", "Temple Bell"], ["art_emboss_temple_spire.jpg", "Temple Spire"], ["art_emboss_peacock_feather_eye.jpg", "Peacock Feather Eye"], ["art_emboss_lotus_pod.jpg", "Lotus Pod"], ["art_emboss_paisley_cluster.jpg", "Paisley Cluster"], ["art_emboss_mango_motif.jpg", "Mango Motif"], ["art_emboss_bangle_stack.jpg", "Bangle Stack"], ["art_emboss_kolam_grid.jpg", "Kolam Grid"], ["art_emboss_terracotta_horse.jpg", "Terracotta Horse"], ["art_emboss_temple_bell.jpg", "Temple Bell"], ["art_emboss_conch_shell.jpg", "Conch Shell"], ["art_emboss_toran_hanging.jpg", "Toran Hanging"], ["art_emboss_diya_row.jpg", "Diya Row"], ["art_emboss_brass_lamp.jpg", "Brass Lamp"], ["art_emboss_tulsi_plant.jpg", "Tulsi Plant"], ["art_emboss_marigold_string.jpg", "Marigold String"], ["art_emboss_silk_sari_border.jpg", "Silk Sari Border"], "art_emboss_zardozi_vine.jpg", ["art_emboss_block_print_stamp.jpg", "Block-Print Stamp"], ["art_acrylic_desert_caravan.jpg", "Desert Caravan"], ["art_acrylic_monsoon_peacock_pair.jpg", "Monsoon Peacock Pair"], ["art_acrylic_puppet_theatre.jpg", "Puppet Theatre"], ["art_acrylic_snake_boat_race.jpg", "Snake-Boat Race"], ["art_acrylic_bihu_drummers.jpg", "Bihu Drummers"], ["art_acrylic_theyyam_fire_ritual.jpg", "Theyyam Fire Ritual"], ["art_acrylic_yakshagana_stage.jpg", "Yakshagana Stage"], ["art_acrylic_lavani_dancer.jpg", "Lavani Dancer"], ["art_acrylic_bhangra_drummers.jpg", "Bhangra Drummers"], ["art_acrylic_ghoomar_swirl.jpg", "Ghoomar Swirl"], ["art_acrylic_chhau_mask_dancer.jpg", "Chhau Mask Dancer"], ["art_acrylic_manipuri_dancer.jpg", "Manipuri Dancer"], ["art_acrylic_mohiniyattam_pose.jpg", "Mohiniyattam Pose"], ["art_acrylic_odissi_dancer.jpg", "Odissi Dancer"], ["art_acrylic_bharatanatyam_mudra.jpg", "Bharatanatyam Mudra"], ["art_acrylic_kathak_chakkar_spin.jpg", "Kathak Chakkar Spin"], ["art_acrylic_kuchipudi_tarangam.jpg", "Kuchipudi Tarangam"], ["art_acrylic_baul_ektara_singer.jpg", "Baul Ektara Singer"], ["art_room_bedroom_peacock_wall.jpg", "Bedroom Peacock Wall"], ["art_room_study_gond_forest_wall.jpg", "Study Gond-Forest Wall"], ["art_room_living_room_phad_scroll_wall.jpg", "Living-Room Phad Scroll Wall"], ["art_room_nursery_warli_wall.jpg", "Nursery Warli Wall"], ["art_room_foyer_madhubani_wall.jpg", "Foyer Madhubani Wall"], ["art_room_corridor_kalamkari_wall.jpg", "Corridor Kalamkari Wall"], ["art_room_staircase_phulkari_wall.jpg", "Staircase Phulkari Wall"], ["art_room_puja_room_lotus_wall.jpg", "Puja-Room Lotus Wall"], ["art_room_balcony_backwater_wall.jpg", "Balcony Backwater Wall"], ["art_room_cafe_ajrak_wall.jpg", "Cafe Ajrak Wall"], ["art_room_boutique_chikankari_wall.jpg", "Boutique Chikankari Wall"], ["art_room_lobby_sun_wheel_wall.jpg", "Lobby Sun-Wheel Wall"], ["art_room_reading_nook_forest_wall.jpg", "Reading Nook Forest Wall"], ["art_room_music_room_sitar_wall.jpg", "Music Room Sitar Wall"], ["art_room_guest_room_paisley_wall.jpg", "Guest Room Paisley Wall"], ["art_room_sunroom_peacock_wall.jpg", "Sunroom Peacock Wall"], ["art_cutout_dancer_silhouette.jpg", "Dancer Silhouette"], ["art_cutout_peacock.jpg", "Peacock"], ["art_cutout_paisley.jpg", "Paisley"], ["art_cutout_banyan_tree.jpg", "Banyan Tree"], ["art_cutout_kolam.jpg", "Kolam"], ["art_cutout_country_boat.jpg", "Country Boat"], ["art_cutout_elephant_parade.jpg", "Elephant Parade"], ["art_cutout_temple_spire.jpg", "Temple Spire"], ["art_cutout_lotus.jpg", "Lotus"], ["art_cutout_fish_pair.jpg", "Fish Pair"], ["art_cutout_sun_and_moon.jpg", "Sun And Moon"], ["art_cutout_sitar.jpg", "Sitar"], ["art_laserlit_temple_bell.jpg", "Temple Bell"], ["art_laserlit_conch.jpg", "Conch"], ["art_laserlit_peacock_feather.jpg", "Peacock Feather"], ["art_laserlit_kolam.jpg", "Kolam"], ["art_laserlit_paisley.jpg", "Paisley"], ["art_laserlit_elephant.jpg", "Elephant"], ["art_laserlit_bird_flock.jpg", "Bird Flock"], ["art_laserlit_mountain_ridge.jpg", "Mountain Ridge"], ["art_laserlit_river_sail.jpg", "River Sail"], ["art_laserlit_moon_pond.jpg", "Moon Pond"], ["art_laserlit_sun_rays.jpg", "Sun Rays"], ["art_laserlit_mandala.jpg", "Mandala"], ["art_backlit_jaali_lattice.jpg", "Jaali Lattice"], ["art_backlit_lotus_pond.jpg", "Lotus Pond"], ["art_backlit_peacock_fan.jpg", "Peacock Fan"], ["art_backlit_temple_at_dawn.jpg", "Temple At Dawn"], ["art_backlit_banyan_at_dusk.jpg", "Banyan At Dusk"], ["art_backlit_kolam_at_night.jpg", "Kolam At Night"], ["art_backlit_mountain_dawn.jpg", "Mountain Dawn"], ["art_backlit_river_sunset_sail.jpg", "River Sunset Sail"], ["art_backlit_fire_dancers.jpg", "Fire Dancers"], ["art_backlit_marigold_garland.jpg", "Marigold Garland"], ["art_backlit_paisley_weave.jpg", "Paisley Weave"], ["art_backlit_bird_flock_at_dawn.jpg", "Bird Flock At Dawn"], ["art_creative_toy_train_in_the_hills.jpg", "Toy Train In The Hills"], ["art_creative_puppet_caravan.jpg", "Puppet Caravan"], ["art_creative_bullock_cart_at_sunset.jpg", "Bullock Cart At Sunset"], ["art_creative_village_well_gathering.jpg", "Village Well Gathering"], ["art_creative_swing_under_the_banyan.jpg", "Swing Under The Banyan"], ["art_creative_fireflies_over_fields.jpg", "Fireflies Over Fields"], ["art_creative_paper_boats_in_rain.jpg", "Paper Boats In Rain"], ["art_creative_lantern_night_market.jpg", "Lantern Night Market"], ["art_creative_kolam_at_morning_door.jpg", "Kolam At Morning Door"], ["art_creative_haat_bazaar_bustle.jpg", "Haat Bazaar Bustle"], ["art_creative_mountain_terrace_fields.jpg", "Mountain Terrace Fields"], ["art_creative_coastal_salt_pans.jpg", "Coastal Salt Pans"], ["art_creative_fishing_sails_at_dawn.jpg", "Fishing Sails At Dawn"], ["art_creative_potter_s_wheel.jpg", "Potter'S Wheel"], ["art_creative_loom_song.jpg", "Loom Song"], ["art_creative_brass_makers_at_work.jpg", "Brass Makers At Work"]]
+function titleOf(f){
+ if(f==='india_motif_hero.jpg')return 'Bharat Motif Map';
+ let s=f.replace('.jpg',''),ed='';
+ if(s.startsWith('ed_night_')){ed=' · Nocturne';s=s.slice(9)}else if(s.startsWith('ed_dawn_')){ed=' · Dawn';s=s.slice(8)}
+ const P=[['art_wallpaper_','Wallpaper · '],['art_wall_','Mural · '],['art_neon_tube_','Neon · '],['art_cnc_','CNC · '],['art_emboss_','Emboss · '],['art_acrylic_','Acrylic · '],['art_creative_','Concept · '],['art_cutout_','Cutout · '],['art_laserlit_','Laserlit · '],['art_backlit_','Backlit · '],['art_room_','Room · '],['art_folk_','Folk · '],['art_tribal_','Tribal · '],['art_uv_','UV Print · '],['art_min_','Minimal · '],['art_gold_','Gold · '],['art_silver_','Silver · '],['art_gem_','Gem · '],['art_','']];
+ let pre='';for(const q of P){if(s.startsWith(q[0])){pre=q[1];s=s.slice(q[0].length);break}}
+ s=s.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase());
+ return pre+s+ed;
+}
+/* ===== Shop = 705 me se jitni images bani hain — sab live artworks ===== */
+products.length=0;
+GALLERY.filter(g=>typeof g==='string'&&g!=='india_motif_hero.jpg').forEach(f=>{
+ const t=titleOf(f);
+ let hit=null;for(const s of ARTSPEC){if(f.startsWith(s[0])){hit=s;break}}
+ let spec,price;
+ if(hit&&hit[0]!=='art_'){spec=hit[1];price=hit[2]}
+ else{let h=0;for(let j=0;j<f.length;j++)h=(h*31+f.charCodeAt(j))>>>0;const fs=FOLKSPEC[h%3];spec=fs[0];price=fs[1]}
+ const text=(t+' '+f).toLowerCase();
+ let cat='general';
+ for(const k of ['stc','obc','sc','ews','creamy']){const c=CATS[k];if(c.re?c.re.test(text):c.some(x=>text.includes(x))){cat=k;break}}
+ products.push([t,'Bharat',price,Math.round(price*1.25),cat,spec,f]);
+});
+document.getElementById('galcount').textContent=GALLERY.length+' images · '+GALLERY.filter(g=>typeof g==='string').length+' live · '+GALLERY.filter(g=>Array.isArray(g)).length+' coming soon';
+
+/* ===== Canvas-type live samples — 3×5 grid, one tile changes every 3 s ===== */
+(function(){
+ const grid=document.getElementById('tsGrid');
+ const CATS15=[['Wallpaper',5999,['art_wallpaper_']],['Mural',6499,['art_wall_']],['Neon',4499,['art_neon_']],['CNC Cut',4799,['art_cnc_']],['Emboss',3999,['art_emboss_']],['Acrylic',5499,['art_acrylic_']],['Room Canvas',4299,['art_room_']],['Cutout',3299,['art_cutout_']],['Laserlit',3799,['art_laserlit_']],['Backlit',3499,['art_backlit_']],['Concept',2499,['art_creative_']],['UV Print',2999,['art_uv_']],['Minimal',2199,['art_min_']],['Metal & Gem','7999+',['art_gold_','art_silver_','art_gem_']]];
+ const groups=CATS15.map(c=>ALLARTS.filter(f=>c[2].some(p=>f.startsWith(p))));
+ const folk=ALLARTS.filter(f=>!CATS15.some(c=>c[2].some(p=>f.startsWith(p))));
+ const labels=CATS15.map(c=>[c[0],c[1]]);labels.push(['Folk',2499]);groups.push(folk);
+ const start=groups.map((g,i)=>g.length>1?(i*7+3)%g.length:0);
+ grid.innerHTML=labels.map((l,i)=>{const f=groups[i][start[i]];return '<a class="ts" href="#shop"><img loading="lazy" src="'+f+'" alt="'+l[0]+' canvas sample"><span>'+l[0]+' · ₹'+l[1]+'</span><small class="tsNow">'+titleOf(f)+'</small></a>'}).join('');
+ const tiles=[...grid.querySelectorAll('.ts')];
+ const idx=start.slice();
+ let cur=0;
+ setInterval(()=>{
+  const k=cur%tiles.length,t=tiles[k],g=groups[k];
+  if(g.length>1){
+   idx[k]=(idx[k]+1)%g.length;
+   const f=g[idx[k]],im=t.querySelector('img');
+   im.style.opacity=.15;im.src=f;im.onload=()=>{im.style.opacity=1};im.classList.remove('pop');void im.offsetWidth;im.classList.add('pop');
+   t.querySelector('.tsNow').textContent=titleOf(f);
+  }
+  cur++;
+ },3000);
+})();
+
+(function(){const t=document.querySelector('.shTitle');if(!t)return;const txt=t.textContent;t.textContent='';[...txt].forEach(function(ch,i){const s=document.createElement('span');s.className='bl';s.textContent=ch;s.style.animationDelay=(i*0.055)+'s';t.appendChild(s)})})();
+/* ===== Checkout → WhatsApp order to studio ===== */
+function checkout(){
+ if(!bag.length){alert('Pehle koi artwork bag me add kijiye!');return}
+ const lines=bag.map((p,i)=>(i+1)+'. '+p[0]+' — Rs.'+p[2]);
+ const msg='🛍️ NEW ORDER — ArtVision DesiMuseum\n'+lines.join('\n')+'\nTotal: Rs.'+bag.reduce((a,p)=>a+ +p[2],0)+'\n\nName:\nAddress:\nPincode:';
+ if(window.gtag){try{gtag('event','whatsapp_order_click',{items_in_bag:bag.length,order_value:bag.reduce((a,p)=>a+ +p[2],0)})}catch(e){}}
+ window.open('https://wa.me/919009001551?text='+encodeURIComponent(msg),'_blank');
+}
+
+/* ===== Artwork click → download with logo watermark ===== */
+let dlSrc='',dlTitle='';
+function openDownload(src,title){dlSrc=src;dlTitle=title;const i=document.getElementById('dlimg');i.src=src;i.alt=title+' artwork preview';document.getElementById('dltitle').textContent=title;document.getElementById('dlmodal').classList.add('open')}
+function closeDownload(){document.getElementById('dlmodal').classList.remove('open')}
+document.getElementById('dlmodal').addEventListener('click',e=>{if(e.target.id==='dlmodal')closeDownload()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeDownload()});
+document.getElementById('grid').addEventListener('click',e=>{const img=e.target.closest('img');if(!img)return;openDownload(img.getAttribute('src'),(img.getAttribute('alt')||'').replace(' canvas artwork',''))});
+function downloadArtwork(){
+  if(!dlSrc)return;
+  const im=new Image(),logo=new Image();
+  im.onload=function(){logo.onload=function(){
+    const c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;
+    const x=c.getContext('2d');
+    x.drawImage(im,0,0);
+    const w=Math.max(64,Math.round(c.width*0.16)),h=Math.round(w*(logo.naturalHeight/logo.naturalWidth));
+    x.save();x.globalAlpha=0.92;x.shadowColor='rgba(24,20,16,.55)';x.shadowBlur=6;x.shadowOffsetX=2;x.shadowOffsetY=2;
+    x.drawImage(logo,c.width-w-22,c.height-h-22,w,h);x.restore();
+    c.toBlob(function(b){const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=dlTitle.replace(/[^a-z0-9]+/gi,'_')+'_ArtVisionStudio.jpg';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},5000)},'image/jpeg',0.92);
+  };logo.src='logo_icon.png'};
+  im.src=dlSrc;
+}
+/* ===== 22 bhashayein — language switcher ===== */
+const I18N={"en":{"nav1":"Shop all","nav2":"Gallery","nav3":"Our story","nav4":"Journal","cta":"Shop the collection →","ph":"Search a state, craft or story…","st1":"LANGUAGES","st2":"TRIBES HONOURED","st3":"CANVAS","storyh":"Pick your story","tsh":"Canvas types — live samples"},"hi":{"nav1":"सभी खरीदें","nav2":"गैलरी","nav3":"हमारी कहानी","nav4":"जर्नल","cta":"कलेक्शन खरीदें →","ph":"राज्य, कला या कहानी खोजें…","st1":"भाषाएँ","st2":"सम्मानित जनजातियाँ","st3":"कैनवास","storyh":"अपनी कहानी चुनें","tsh":"कैनवास प्रकार — लाइव नमूने"},"bn":{"nav1":"সব কিনুন","nav2":"গ্যালারি","nav3":"আমাদের গল্প","nav4":"জার্নাল","cta":"কালেকশন কিনুন →","ph":"রাজ্য, শিল্প বা গল্প খুঁজুন…","st1":"ভাষা","st2":"সম্মানিত জনজাতি","st3":"ক্যানভাস","storyh":"আপনার গল্প বেছে নিন","tsh":"ক্যানভাসের ধরন — লাইভ নমুনা"},"ta":{"nav1":"அனைத்தும் வாங்கு","nav2":"காட்சியகம்","nav3":"எங்கள் கதை","nav4":"ஜர்னல்","cta":"தொகுப்பை வாங்கு →","ph":"மாநிலம், கலை அல்லது கதையைத் தேடுங்கள்…","st1":"மொழிகள்","st2":"கௌரவிக்கப்பட்ட பழங்குடிகள்","st3":"கேன்வஸ்","storyh":"உங்கள் கதையைத் தேர்வுசெய்க","tsh":"கேன்வஸ் வகைகள் — நேரடி மாதிரிகள்"},"te":{"nav1":"అన్నీ కొనండి","nav2":"గ్యాలరీ","nav3":"మా కథ","nav4":"జర్నల్","cta":"సేకరణ కొనండి →","ph":"రాష్ట్రం, కళ లేదా కథ వెతకండి…","st1":"భాషలు","st2":"గౌరవించబడిన గిరిజనులు","st3":"క్యాన్వాస్","storyh":"మీ కథను ఎంచుకోండి","tsh":"క్యాన్వాస్ రకాలు — లైవ్ నమూనాలు"},"mr":{"nav1":"सर्व खरेदी करा","nav2":"गॅलरी","nav3":"आमची कहाणी","nav4":"जर्नल","cta":"संग्रह खरेदी करा →","ph":"राज्य, कला किंवा कहाणी शोधा…","st1":"भाषा","st2":"सन्मानित जमाती","st3":"कॅनव्हास","storyh":"तुमची कहाणी निवडा","tsh":"कॅनव्हास प्रकार — थेट नमुने"},"gu":{"nav1":"બધું ખરીદો","nav2":"ગેલેરી","nav3":"અમારી વાર્તા","nav4":"જર્નલ","cta":"સંગ્રહ ખરીદો →","ph":"રાજ્ય, કલા કે વાર્તા શોધો…","st1":"ભાષાઓ","st2":"સન્માનિત જનજાતિઓ","st3":"કેનવાસ","storyh":"તમારી વાર્તા પસંદ કરો","tsh":"કેનવાસ પ્રકારો — લાઇવ નમૂના"},"kn":{"nav1":"ಎಲ್ಲಾ ಖರೀದಿಸಿ","nav2":"ಗ್ಯಾಲರಿ","nav3":"ನಮ್ಮ ಕಥೆ","nav4":"ಜರ್ನಲ್","cta":"ಸಂಗ್ರಹ ಖರೀದಿಸಿ →","ph":"ರಾಜ್ಯ, ಕಲೆ ಅಥವಾ ಕಥೆ ಹುಡುಕಿ…","st1":"ಭಾಷೆಗಳು","st2":"ಗೌರವಿಸಿದ ಬುಡಕಟ್ಟುಗಳು","st3":"ಕ್ಯಾನ್ವಾಸ್","storyh":"ನಿಮ್ಮ ಕಥೆ ಆಯ್ಕೆಮಾಡಿ","tsh":"ಕ್ಯಾನ್ವಾಸ್ ಪ್ರಕಾರಗಳು — ಲೈವ್ ಮಾದರಿಗಳು"},"ml":{"nav1":"എല്ലാം വാങ്ങൂ","nav2":"ഗാലറി","nav3":"ഞങ്ങളുടെ കഥ","nav4":"ജേർണൽ","cta":"ശേഖരം വാങ്ങൂ →","ph":"സംസ്ഥാനം, കല അല്ലെങ്കിൽ കഥ തിരയുക…","st1":"ഭാഷകൾ","st2":"ആദരിക്കപ്പെട്ട ഗോത്രങ്ങൾ","st3":"ക്യാൻവാസ്","storyh":"നിങ്ങളുടെ കഥ തിരഞ്ഞെടുക്കൂ","tsh":"ക്യാൻവാസ് തരങ്ങൾ — തത്സമയ സാമ്പിളുകൾ"},"or":{"nav1":"ସବୁ କିଣନ୍ତୁ","nav2":"ଗ୍ୟାଲେରି","nav3":"ଆମ କାହାଣୀ","nav4":"ଜର୍ନାଲ","cta":"ସଂଗ୍ରହ କିଣନ୍ତୁ →","ph":"ରାଜ୍ୟ, କଳା କିମ୍ବା କାହାଣୀ ଖୋଜନ୍ତୁ…","st1":"ଭାଷା","st2":"ସମ୍ମାନିତ ଜନଜାତି","st3":"କ୍ୟାନଭାସ","storyh":"ଆପଣଙ୍କ କାହାଣୀ ବାଛନ୍ତୁ","tsh":"କ୍ୟାନଭାସ ପ୍ରକାର — ଲାଇଭ ନମୁନା"},"as":{"nav1":"সকলো কিনক","nav2":"গেলেৰী","nav3":"আমাৰ কাহিনী","nav4":"জাৰ্নেল","cta":"সংগ্ৰহ কিনক →","ph":"ৰাজ্য, কলা বা কাহিনী সন্ধান কৰক…","st1":"ভাষা","st2":"সন্মানিত জনজাতি","st3":"কেনভাছ","storyh":"আপোনাৰ কাহিনী বাছক","tsh":"কেনভাছ প্ৰকাৰ — লাইভ নমুনা"},"pa":{"nav1":"ਸਭ ਖਰੀਦੋ","nav2":"ਗੈਲਰੀ","nav3":"ਸਾਡੀ ਕਹਾਣੀ","nav4":"ਜਰਨਲ","cta":"ਸੰਗ੍ਰਹਿ ਖਰੀਦੋ →","ph":"ਰਾਜ, ਕਲਾ ਜਾਂ ਕਹਾਣੀ ਖੋਜੋ…","st1":"ਭਾਸ਼ਾਵਾਂ","st2":"ਸਨਮਾਨਿਤ ਕਬੀਲੇ","st3":"ਕੈਨਵਸ","storyh":"ਆਪਣੀ ਕਹਾਣੀ ਚੁਣੋ","tsh":"ਕੈਨਵਸ ਕਿਸਮਾਂ — ਲਾਈਵ ਨਮੂਨੇ"},"ur":{"nav1":"سب خریدیں","nav2":"گیلری","nav3":"ہماری کہانی","nav4":"جرنل","cta":"مجموعہ خریدیں ←","ph":"ریاست، فن یا کہانی تلاش کریں…","st1":"زبانیں","st2":"معزز قبائل","st3":"کینوس","storyh":"اپنی کہانی چنیں","tsh":"کینوس کی اقسام — براہ راست نمونے"},"ne":{"nav1":"सबै किन्नुहोस्","nav2":"ग्यालरी","nav3":"हाम्रो कथा","nav4":"जर्नल","cta":"सङ्ग्रह किन्नुहोस् →","ph":"राज्य, कला वा कथा खोज्नुहोस्…","st1":"भाषाहरू","st2":"सम्मानित जनजातिहरू","st3":"क्यानभास","storyh":"आफ्नो कथा छान्नुहोस्","tsh":"क्यानभास प्रकार — लाइभ नमूना"},"sa":{"nav1":"सर्वं क्रीणीत","nav2":"दीर्घा","nav3":"अस्माकं कथा","nav4":"पत्रिका","cta":"संग्रहं क्रीणीत →","ph":"राज्यं, कलां वा कथां अन्विष्यत…","st1":"भाषाः","st2":"सम्मानिताः जनजातयः","st3":"चित्रपटः","storyh":"स्वीयां कथां चिनुत","tsh":"चित्रपट-प्रकाराः — प्रत्यक्ष नमूनाः"},"ks":{"nav1":"सब किन","nav2":"गैलरी","nav3":"अस्‍य कहानी","nav4":"जर्नल","cta":"संग्रह किन →","ph":"रियासत, कला या कहानी छंडिव…","st1":"जबान","st2":"इज़्ज़तदार कबीले","st3":"कैनवास","storyh":"पन्युन कहानी चुनिव","tsh":"कैनवास क़िस्म — लाइव नमूने"},"kok":{"nav1":"सगळे किणात","nav2":"गॅलरी","nav3":"आमची कहाणी","nav4":"जर्नल","cta":"संग्रह किणात →","ph":"राज्य, कला वा कहाणी सोदात…","st1":"भाषा","st2":"मानाचीं आदिवासीं","st3":"कॅनव्हास","storyh":"तुमची कहाणी वेंचात","tsh":"कॅनव्हास प्रकार — लाइव नमुने"},"mai":{"nav1":"सभ किनू","nav2":"गैलरी","nav3":"हमर कथा","nav4":"जर्नल","cta":"संग्रह किनू →","ph":"राज्य, कला वा कथा खोजू…","st1":"भाषा","st2":"सम्मानित जनजाति","st3":"कैनवास","storyh":"अपन कथा चुनू","tsh":"कैनवास प्रकार — जीवित नमूना"},"doi":{"nav1":"सब्बे खरीदो","nav2":"गैलरी","nav3":"सदी कहानी","nav4":"जर्नल","cta":"संग्रह खरीदो →","ph":"रियासत, कला जां कहानी खोजो…","st1":"भाशां","st2":"सम्मानित जनजातियां","st3":"कैनवास","storyh":"अपनी कहानी चुनो","tsh":"कैनवास किस्मां — लाइव नमूने"},"brx":{"nav1":"गासैबो नानाय","nav2":"गैलेरी","nav3":"आंनि खोबथाय","nav4":"जर्नल","cta":"संग्रह नानाय →","ph":"रिहा, कला एबा खोबथाय नागो…","st1":"राव","st2":"इज्जतदार हादानीफोर","st3":"क्यान्भास","storyh":"नांनाय खोबथाय सायखाल","tsh":"क्यान्भास बिजाब — लाइभ नमुना"},"mni":{"nav1":"পুম্নমক লৈবিউ","nav2":"গেলরি","nav3":"ঐখোয়গী ৱারী","nav4":"জর্নল","cta":"কলেক্সন লৈবিউ →","ph":"স্তেত, কলা নত্রগা ৱারী থিবিউ…","st1":"লোল","st2":"ইকায়খুম্নবা ফুরূপ","st3":"কেনভাস","storyh":"মশাগী ৱারী খনবিউ","tsh":"কেনভাস মখল — লাইভ উদাহরন"},"sat":{"nav1":"ᱡᱷᱚᱛᱚ ᱠᱤᱨᱤᱧ","nav2":"ᱜᱮᱞᱮᱨᱤ","nav3":"ᱟᱞᱮᱭᱟᱜ ᱠᱟᱛᱷᱟ","nav4":"ᱡᱚᱨᱱᱟᱞ","cta":"ᱥᱟᱶᱛᱟ ᱠᱤᱨᱤᱧ →","ph":"ᱨᱟᱡᱽ, ᱠᱟᱹᱨᱤ ᱵᱟᱝ ᱠᱟᱛᱷᱟ ᱥᱮᱸᱫᱽᱨᱟ…","st1":"ᱯᱟᱹᱨᱥᱤ","st2":"ᱢᱟᱹᱱ ᱟᱠᱟᱱ ᱦᱚᱲ","st3":"ᱠᱮᱱᱵᱷᱟᱥ","storyh":"ᱟᱢᱟᱜ ᱠᱟᱛᱷᱟ ᱵᱟᱪᱷᱟᱣ","tsh":"ᱠᱮᱱᱵᱷᱟᱥ ᱡᱟᱹᱛ — ᱞᱟᱭᱤᱵᱷ ᱱᱚᱢᱩᱱᱟ"},"sd":{"nav1":"सभ खरीदियो","nav2":"गैलरी","nav3":"अस्सां जी कहानी","nav4":"जर्नल","cta":"संग्रह खरीदियो →","ph":"रियासत, कला या कहानी ढोल्यो…","st1":"भाषायूं","st2":"सम्मानित कबीला","st3":"कैनवास","storyh":"पंहिंजी कहानी चुन्दो","tsh":"कैनवास प्रकार — लाइव नमूना"}};
+(function(){
+ const sel=document.getElementById('langSel');
+ function apply(l){const d=I18N[l]||I18N.en;
+  document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.getAttribute('data-i18n');if(d[k])e.textContent=d[k]});
+  document.querySelectorAll('[data-i18n-ph]').forEach(e=>{const k=e.getAttribute('data-i18n-ph');if(d[k])e.placeholder=d[k]});
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ur')?'rtl':'ltr';
+  try{localStorage.setItem('ddlang',l)}catch(e){}
+ }
+ sel.addEventListener('change',()=>apply(sel.value));
+ let saved='en';try{saved=localStorage.getItem('ddlang')||'en'}catch(e){}
+ if(I18N[saved])sel.value=saved;
+ apply(I18N[sel.value]?sel.value:'en');
+})();
+
+/* ===== Premium layer: scroll reveal, stat count-up, progress bar, to-top ===== */
+(function(){
+ const hasIO='IntersectionObserver' in window;
+ const io=hasIO?new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0}):null;
+function revealSweep(){document.querySelectorAll('section.reveal:not(.in)').forEach(s=>{const r=s.getBoundingClientRect();if(r.top<window.innerHeight*.95&&r.bottom>0)s.classList.add('in')})}
+ document.querySelectorAll('section').forEach(s=>{if(s.classList.contains('hero'))return;s.classList.add('reveal');if(io)io.observe(s);else s.classList.add('in')});
+if(hasIO){requestAnimationFrame(revealSweep);window.addEventListener('load',revealSweep);window.addEventListener('scroll',revealSweep,{passive:true});setTimeout(revealSweep,1200)}
+ const nums=[...document.querySelectorAll('.stats strong')];
+ if(hasIO&&nums.length){const so=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)return;so.disconnect();nums.forEach(n=>{const target=+n.textContent,t0=performance.now();(function tick(t){const k=Math.min(1,(t-t0)/1100);n.textContent=Math.round(target*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(tick)})(t0)})})},{threshold:.4});so.observe(nums[0].closest('.stats'))}
+ const pr=document.getElementById('progress'),tt=document.getElementById('toTop');
+ addEventListener('scroll',()=>{const h=document.documentElement;pr.style.width=(h.scrollTop/((h.scrollHeight-h.clientHeight)||1)*100)+'%';tt.classList.toggle('show',h.scrollTop>600)},{passive:true});
+ tt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+})();
+
+render();
+let end=Date.now()+86400000;
+setInterval(()=>{let s=Math.max(0,end-Date.now())/1000,h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=Math.floor(s%60);document.getElementById('timer').textContent=[h,m,x].map(n=>String(n).padStart(2,'0')).join(':')},1000);
+</script>
+</body>
+</html>
