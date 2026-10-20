@@ -66,12 +66,54 @@
   .btn{display:inline-block;background:var(--ivory);color:var(--ink);padding:16px 24px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-radius:6px}
 
   .hud{position:fixed;left:16px;bottom:14px;z-index:55;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory);background:rgba(15,12,9,.8);border:1px solid var(--line);padding:8px 11px;border-radius:6px;pointer-events:none}
+  .zoom{position:fixed;inset:0;z-index:70;display:grid;place-items:center;background:rgba(10,8,5,.84);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .3s ease}
+  .zoom.on{opacity:1}
+  .zoom img{max-width:94vw;max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:10px;box-shadow:0 40px 90px -30px #000;transform:scale(.94);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+  .zoom.on img{transform:none}
+  .zcap{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory);background:rgba(15,12,9,.85);padding:8px 12px;border-radius:6px;white-space:nowrap;max-width:92vw;overflow:hidden;text-overflow:ellipsis}
   @media (max-width:640px){ .search{margin-left:0;width:100%;min-width:0} .tile .cap{height:40px} }
   @media (prefers-reduced-motion: reduce){ .tile{opacity:1!important} .intro .stage{position:relative;height:auto;padding:14vh 0} .intro{height:auto} .marq{display:none} }
+
+  /* ===== Curatorial layer (designer pass) ===== */
+  :root{--brass:#c9a25a;--paper:#efe7d6;--char:#0d0b08}
+  body{background:radial-gradient(1200px 700px at 80% -10%,#23190e 0%,transparent 60%),var(--char);font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(520px circle at var(--mx,50%) var(--my,30%),rgba(201,162,90,.13),transparent 62%)}
+  body::after{content:'';position:fixed;inset:-50%;pointer-events:none;z-index:65;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  header{background:rgba(13,11,8,.78);border-bottom:1px solid rgba(201,162,90,.22)}
+  .title{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.01em;font-size:clamp(26px,3.4vw,40px)}
+  .title span{color:var(--brass);font-style:normal}
+  .count{font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:.22em;color:var(--brass)}
+  .back{font-family:"Helvetica Neue",Arial,sans-serif;border-color:rgba(201,162,90,.4);color:var(--paper)}
+  .chip{font-family:"Helvetica Neue",Arial,sans-serif;border-color:rgba(201,162,90,.3);color:var(--paper)}
+  .chip.on{background:var(--brass);border-color:var(--brass);color:var(--char)}
+  .search{font-family:"Helvetica Neue",Arial,sans-serif;border-color:rgba(201,162,90,.3)}
+  .intro h1{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:-.04em;text-transform:none;font-size:clamp(64px,14vw,230px);line-height:.9}
+  .intro h1 em{color:var(--brass)}
+  .intro p{font-style:italic;color:#b9ae97;font-size:17px}
+  .intro .down{font-family:"Helvetica Neue",Arial,sans-serif;color:var(--brass)}
+  .tile .fr{border-radius:2px;box-shadow:0 0 0 1px rgba(201,162,90,.18),0 30px 60px -28px #000}
+  .tile .cap{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;height:auto;min-height:46px;padding:10px 1px 0;font-family:"Helvetica Neue",Arial,sans-serif;color:#b9ae97}
+  .tile .cap b{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:13px;text-transform:none;letter-spacing:0;color:var(--paper);max-width:100%;white-space:normal;line-height:1.25;display:block}
+  .tile .cap div span{display:block;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#7f7663;margin-top:3px}
+  .tile .cap i{font-family:"Helvetica Neue",Arial,sans-serif;font-size:9px;letter-spacing:.18em;color:var(--brass);font-style:normal;white-space:nowrap;padding-top:3px}
+  .room{position:relative;z-index:2;width:min(1380px,92vw);margin:6vh auto 0;padding:0 0 3vh;border-bottom:1px solid rgba(201,162,90,.2);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:end}
+  .room .no{font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass)}
+  .room h2{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;font-size:clamp(34px,5vw,72px);line-height:.95;letter-spacing:-.03em}
+  .room p{grid-column:1/-1;font-style:italic;color:#b9ae97;font-size:16px;max-width:620px;line-height:1.6;margin-bottom:1vh}
+  .room[hidden]{display:none}
+  .zoom{background:rgba(8,6,4,.9)}
+  .zcap{font-family:"Helvetica Neue",Arial,sans-serif;background:rgba(13,11,8,.9);border:1px solid rgba(201,162,90,.3);color:var(--paper)}
+  .outro h2{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.03em;font-size:clamp(48px,8.5vw,140px)}
+  .outro h2 em{color:var(--brass)}
+  .btn{background:var(--brass);color:var(--char);font-family:"Helvetica Neue",Arial,sans-serif}
+  .empty{font-style:italic}
+  .hud{font-family:"Helvetica Neue",Arial,sans-serif;background:rgba(13,11,8,.85);border-color:rgba(201,162,90,.3);color:var(--paper)}
+  .marq{-webkit-text-stroke:1px rgba(201,162,90,.12);font-family:Georgia,"Times New Roman",serif;font-style:italic;text-transform:none}
 </style>
 </head>
 <body>
 <div id="bar"></div>
+<div class="zoom" id="zoom" aria-hidden="true"><img id="zoomImg" alt=""><div class="zcap" id="zcap"></div></div>
 <div class="hud" id="hud">Scene 01</div>
 <div class="marq" id="marq">Coming Soon ✦ Art Vision ✦ Coming Soon ✦ Art Vision ✦ Coming Soon ✦ Art Vision ✦</div>
 
@@ -98,13 +140,14 @@
   </div>
 </section>
 
+<section class="room" id="room" hidden><div><div class="no" id="roomNo">Room</div></div><h2 id="roomTitle"></h2><p id="roomNote"></p></section>
 <main class="wall" id="wall"></main>
 <div class="empty" id="empty" hidden>Koi match nahi mila.</div>
 
 <section class="outro">
   <div>
-    <h2>Aapki deewar,<br><em>aapki kahani.</em></h2>
-    <p>Custom size, frame aur colour ke liye free studio consultation. Indore mein handmade, pan-India delivery.</p>
+    <h2>The wall is yours.<br><em>Ab kahani aapki.</em></h2>
+    <p>Custom size, frame aur colour ke liye free studio consultation. Indore mein handmade, pan-India delivery.</p><p style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7f7663">Exhibition continues · ArtVision DesiMuseum</p>
     <a class="btn" href="https://wa.me/919009001551" target="_blank" rel="noopener">WhatsApp · +91 90090 01551</a>
   </div>
 </section>
@@ -152,6 +195,24 @@ function catDepth(c){ let h = 0; for (const ch of c) h = (h * 31 + ch.charCodeAt
 
 document.getElementById('chips').innerHTML = cats.map(c => `<button class="chip" data-cat="${c}">${c}</button>`).join('');
 
+const ROOMS = {
+  'Folk':'Lok aur janjati kalaaen. Har pattern ek samaj ki smriti hai; yahan rang aur rekha ki apni boli hai.',
+  'Mural':'Deewar par bada kissa. Scale, rhythm aur ek hi nazar mein poori kahani: ye room isi bhasha mein bolta hai.',
+  'Neon':'Roshni ki rekha. Andhere mein sabse zyada chamakne wali kahaniyan, jo deewar ko raat mein zinda kar deti hain.',
+  'CNC Cut':'Lakdi aur metal ki parat par tarasha hua jaali ka khel. Yahan chhaaya hi asli rang hai.',
+  'Emboss':'Ubhri hui sataH. Ye kala chhoo kar dekhne ki cheez hai, aankh se pehle ungliyon se.',
+  'Wallpaper':'Pattern jo deewar ko poori kahani bana de. Repetition yahan sangeet ki tarah chalta hai.'
+};
+function updateRoom(){
+  const room = document.getElementById('room');
+  if (activeCat === 'all'){ room.hidden = true; return; }
+  room.hidden = false;
+  const idx = cats.indexOf(activeCat) + 1;
+  document.getElementById('roomNo').textContent = 'Room ' + String(idx).padStart(2,'0') + ' of ' + String(cats.length).padStart(2,'0');
+  document.getElementById('roomTitle').textContent = activeCat;
+  document.getElementById('roomNote').textContent = ROOMS[activeCat] || 'Is room ki kahaniyan curator ki pasand se.';
+}
+
 function pickTheory(){
   if (activeCat === 'all') return THEORIES[0];
   return THEORIES[(cats.indexOf(activeCat) + 1) % THEORIES.length];
@@ -177,7 +238,7 @@ function build(){
         <div class="ph">${esc(i.t)}</div>
         ${i.img ? '' : '<span class="wip">In progress</span>'}
       </div>
-      <div class="cap"><b>${esc(i.t)}</b><i>#${String(i.n).padStart(3,'0')}</i></div>`;
+      <div class="cap"><div><b>${esc(i.t)}</b><span>${esc(i.c)} · ${esc(i.m)}</span></div><i>Plate ${String(i.n).padStart(3,'0')}</i></div>`;
     wall.appendChild(el);
     const img = el.querySelector('img');
     const t = {
@@ -199,8 +260,8 @@ let layoutQueued = false;
 function queueLayout(){ if (!layoutQueued){ layoutQueued = true; requestAnimationFrame(() => { layoutQueued = false; layout(); }); } }
 function layout(){
   const W = wall.clientWidth || 1000;
-  const C = W < 560 ? 2 : W < 900 ? 3 : 5;
-  const gap = Math.max(12, W * 0.018);
+  const C = W < 560 ? 3 : W < 900 ? 4 : 7;
+  const gap = Math.max(8, W * 0.012);
   const colW = (W - gap * (C - 1)) / C;
   const heights = new Array(C).fill(0);
   tiles.forEach(t => {
@@ -302,14 +363,41 @@ function step(now){
 
 /* ---------- interactions ---------- */
 addEventListener('scroll', onScroll, {passive: true});
+addEventListener('pointermove', e => { document.body.style.setProperty('--mx', e.clientX + 'px'); document.body.style.setProperty('--my', e.clientY + 'px'); }, {passive: true});
 addEventListener('resize', () => { layout(); });
-wall.addEventListener('pointerover', e => { hoverEl = e.target.closest('.tile') || null; wake(); });
-wall.addEventListener('pointerleave', () => { hoverEl = null; wake(); });
+const zoomEl = document.getElementById('zoom'), zoomImg = document.getElementById('zoomImg'), zcap = document.getElementById('zcap');
+const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
+let zoomTile = null;
+function hideZoom(){ zoomEl.classList.remove('on'); zoomEl.setAttribute('aria-hidden', 'true'); zoomTile = null; }
+function showZoom(tile){
+  const im = tile.querySelector('img');
+  if (!im || tile.querySelector('.wip')) return hideZoom();
+  const thumb = 'img/' + im.dataset.full;
+  zoomImg.dataset.alt = '';
+  zoomImg.onerror = () => {
+    if (!zoomImg.dataset.alt){ zoomImg.dataset.alt = '1'; zoomImg.src = thumb; }
+    else hideZoom();
+  };
+  zoomImg.src = im.dataset.full;   // full-size file from the zip, thumbnail as fallback
+  zcap.textContent = tile.querySelector('.cap b').textContent + '  ·  ' + tile.querySelector('.cap i').textContent;
+  zoomEl.classList.add('on');
+  zoomEl.setAttribute('aria-hidden', 'false');
+}
+wall.addEventListener('pointerover', e => {
+  const tile = e.target.closest('.tile') || null;
+  hoverEl = tile; wake();
+  if (canHover && e.pointerType === 'mouse'){
+    if (tile && tile !== zoomTile){ zoomTile = tile; showZoom(tile); }
+    else if (!tile) hideZoom();
+  }
+});
+wall.addEventListener('pointerleave', () => { hoverEl = null; hideZoom(); wake(); });
 
 function setCat(c){
   activeCat = c;
   document.querySelectorAll('.chip').forEach(b => b.classList.toggle('on', b.dataset.cat === c));
   theory = pickTheory();
+  updateRoom();
   build();
   // a category change "shakes" the wall according to its theory
   if (!reduce) tiles.forEach(t => { t.vy += (rnd(t.i + 3) - .5) * 900 * theory.stag / t.mass + 220 / t.mass; t.vx += (rnd(t.i + 9) - .5) * 300 / t.mass; });
