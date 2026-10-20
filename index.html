@@ -558,6 +558,7 @@ const CATNOTES={general:'General / अनारक्षित वर्ग — 
 let shown=20,curList=[];
 function render(){
   let q=document.getElementById('search').value.toLowerCase(),f=document.getElementById('filter').value;
+  if(f==='soon'){window.open('coming-soon.html','_blank','noopener');document.getElementById('filter').value='all';f='all'}
   if(f==='soon'){
     const planned=GALLERY.filter(g=>Array.isArray(g)&&g[1].toLowerCase().includes(q));
     document.getElementById('result').textContent=planned.length+' coming soon artworks';
